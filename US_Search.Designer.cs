@@ -37,7 +37,7 @@ namespace CarRent
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Name = "US_Search";
-            this.Size = new System.Drawing.Size(774, 600);
+            this.Size = new System.Drawing.Size(774, 540);
             this.ResumeLayout(false);
 
         }

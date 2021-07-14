@@ -128,5 +128,18 @@ namespace CarRent
             panelContainer.Controls.Add(uc);
             panelContainer.Controls["US_Users"].BringToFront();
         }
+
+        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void vehiclesButton_Click(object sender, EventArgs e)
+        {
+            US_Vehicles uc = new US_Vehicles();
+            uc.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(uc);
+            panelContainer.Controls["US_Vehicles"].BringToFront();
+        }
     }
 }

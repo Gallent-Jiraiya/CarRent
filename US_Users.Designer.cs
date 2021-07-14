@@ -71,11 +71,11 @@ namespace CarRent
             this.guna2Button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(394, 409);
+            this.guna2Button3.Location = new System.Drawing.Point(391, 409);
             this.guna2Button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(153, 37);
+            this.guna2Button3.Size = new System.Drawing.Size(170, 37);
             this.guna2Button3.TabIndex = 2;
             this.guna2Button3.Text = "Remove Employees";
             // 
@@ -117,11 +117,11 @@ namespace CarRent
             this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(334, 298);
+            this.guna2Button1.Location = new System.Drawing.Point(320, 298);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(95, 32);
+            this.guna2Button1.Size = new System.Drawing.Size(125, 35);
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "Edit Profile";
             // 
@@ -155,7 +155,7 @@ namespace CarRent
             this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.DarkGray;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(328, 102);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(326, 102);
             this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;

@@ -81,6 +81,18 @@
     <Compile Include="US_Search.Designer.cs">
       <DependentUpon>US_Search.cs</DependentUpon>
     </Compile>
+    <Compile Include="US_Users.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="US_Users.Designer.cs">
+      <DependentUpon>US_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="US_Vehicles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="US_Vehicles.Designer.cs">
+      <DependentUpon>US_Vehicles.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +112,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="US_Search.resx">
       <DependentUpon>US_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="US_Users.resx">
+      <DependentUpon>US_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="US_Vehicles.resx">
+      <DependentUpon>US_Vehicles.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

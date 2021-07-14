@@ -102,10 +102,10 @@ namespace CarRent
 
         private void onrentButton_Click(object sender, EventArgs e)
         {
-            US_ ucSrch = new US_Search();
-            ucSrch.Dock = DockStyle.Fill;
-            panelContainer.Controls.Add(ucSrch);
-            panelContainer.Controls["US_Search"].BringToFront();
+            US_OnRent uc = new US_OnRent();
+            uc.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(uc);
+            panelContainer.Controls["US_OnRent"].BringToFront();
         }
     }
 }

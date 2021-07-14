@@ -33,7 +33,6 @@ namespace CarRent
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.usersButton = new System.Windows.Forms.RadioButton();
             this.vehiclesButton = new System.Windows.Forms.RadioButton();
@@ -41,15 +40,16 @@ namespace CarRent
             this.onrentButton = new System.Windows.Forms.RadioButton();
             this.searchButton = new System.Windows.Forms.RadioButton();
             this.dashboardButton = new System.Windows.Forms.RadioButton();
+            this.panelContainer = new System.Windows.Forms.Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.panelContainer = new System.Windows.Forms.Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -58,11 +58,12 @@ namespace CarRent
             this.guna2Panel1.Controls.Add(this.button1);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel1.FillColor = System.Drawing.Color.Red;
+            this.guna2Panel1.FillColor = System.Drawing.Color.DarkRed;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1024, 100);
+            this.guna2Panel1.Size = new System.Drawing.Size(1365, 123);
             this.guna2Panel1.TabIndex = 1;
             // 
             // button2
@@ -71,9 +72,10 @@ namespace CarRent
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(964, 0);
+            this.button2.Location = new System.Drawing.Point(1285, 0);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(30, 30);
+            this.button2.Size = new System.Drawing.Size(40, 37);
             this.button2.TabIndex = 3;
             this.button2.Text = "-";
             this.button2.UseVisualStyleBackColor = false;
@@ -84,9 +86,10 @@ namespace CarRent
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(994, 0);
+            this.button1.Location = new System.Drawing.Point(1325, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(30, 30);
+            this.button1.Size = new System.Drawing.Size(40, 37);
             this.button1.TabIndex = 2;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
@@ -96,27 +99,14 @@ namespace CarRent
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("RomanD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(279, 43);
+            this.label1.Location = new System.Drawing.Point(372, 53);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(715, 23);
+            this.label1.Size = new System.Drawing.Size(645, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Enjoy the efficient and specialized services of Carsons Rent a Car";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.BackgroundImage = global::CarRent.Properties.Resources.Carsons_Logo_white;
-            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.guna2PictureBox1.Image = global::CarRent.Properties.Resources.Carsons_Logo_white;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(46, 13);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(200, 73);
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // guna2Panel2
             // 
@@ -127,10 +117,11 @@ namespace CarRent
             this.guna2Panel2.Controls.Add(this.searchButton);
             this.guna2Panel2.Controls.Add(this.dashboardButton);
             this.guna2Panel2.Controls.Add(this.guna2Panel3);
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 99);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 122);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(250, 666);
+            this.guna2Panel2.Size = new System.Drawing.Size(333, 820);
             this.guna2Panel2.TabIndex = 2;
             // 
             // usersButton
@@ -140,15 +131,17 @@ namespace CarRent
             this.usersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.usersButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usersButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.usersButton.Location = new System.Drawing.Point(0, 467);
+            this.usersButton.Location = new System.Drawing.Point(0, 575);
             this.usersButton.Margin = new System.Windows.Forms.Padding(0);
             this.usersButton.Name = "usersButton";
-            this.usersButton.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.usersButton.Size = new System.Drawing.Size(250, 60);
+            this.usersButton.Padding = new System.Windows.Forms.Padding(67, 0, 0, 0);
+            this.usersButton.Size = new System.Drawing.Size(333, 74);
             this.usersButton.TabIndex = 6;
             this.usersButton.TabStop = true;
             this.usersButton.Text = "Users";
             this.usersButton.UseVisualStyleBackColor = true;
+            this.usersButton.CheckedChanged += new System.EventHandler(this.usersButton_CheckedChanged);
+            this.usersButton.Click += new System.EventHandler(this.usersButton_Click);
             // 
             // vehiclesButton
             // 
@@ -157,11 +150,11 @@ namespace CarRent
             this.vehiclesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.vehiclesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vehiclesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.vehiclesButton.Location = new System.Drawing.Point(0, 407);
+            this.vehiclesButton.Location = new System.Drawing.Point(0, 501);
             this.vehiclesButton.Margin = new System.Windows.Forms.Padding(0);
             this.vehiclesButton.Name = "vehiclesButton";
-            this.vehiclesButton.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.vehiclesButton.Size = new System.Drawing.Size(250, 60);
+            this.vehiclesButton.Padding = new System.Windows.Forms.Padding(67, 0, 0, 0);
+            this.vehiclesButton.Size = new System.Drawing.Size(333, 74);
             this.vehiclesButton.TabIndex = 5;
             this.vehiclesButton.TabStop = true;
             this.vehiclesButton.Text = "Vehicles";
@@ -175,11 +168,11 @@ namespace CarRent
             this.reservedButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.reservedButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reservedButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.reservedButton.Location = new System.Drawing.Point(0, 347);
+            this.reservedButton.Location = new System.Drawing.Point(0, 427);
             this.reservedButton.Margin = new System.Windows.Forms.Padding(0);
             this.reservedButton.Name = "reservedButton";
-            this.reservedButton.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.reservedButton.Size = new System.Drawing.Size(250, 60);
+            this.reservedButton.Padding = new System.Windows.Forms.Padding(67, 0, 0, 0);
+            this.reservedButton.Size = new System.Drawing.Size(333, 74);
             this.reservedButton.TabIndex = 4;
             this.reservedButton.TabStop = true;
             this.reservedButton.Text = "Reserved";
@@ -194,11 +187,11 @@ namespace CarRent
             this.onrentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.onrentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.onrentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.onrentButton.Location = new System.Drawing.Point(0, 287);
+            this.onrentButton.Location = new System.Drawing.Point(0, 353);
             this.onrentButton.Margin = new System.Windows.Forms.Padding(0);
             this.onrentButton.Name = "onrentButton";
-            this.onrentButton.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.onrentButton.Size = new System.Drawing.Size(250, 60);
+            this.onrentButton.Padding = new System.Windows.Forms.Padding(67, 0, 0, 0);
+            this.onrentButton.Size = new System.Drawing.Size(333, 74);
             this.onrentButton.TabIndex = 3;
             this.onrentButton.TabStop = true;
             this.onrentButton.Text = "OnRent";
@@ -213,11 +206,11 @@ namespace CarRent
             this.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.searchButton.Location = new System.Drawing.Point(0, 227);
+            this.searchButton.Location = new System.Drawing.Point(0, 279);
             this.searchButton.Margin = new System.Windows.Forms.Padding(0);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.searchButton.Size = new System.Drawing.Size(250, 60);
+            this.searchButton.Padding = new System.Windows.Forms.Padding(67, 0, 0, 0);
+            this.searchButton.Size = new System.Drawing.Size(333, 74);
             this.searchButton.TabIndex = 2;
             this.searchButton.TabStop = true;
             this.searchButton.Text = "Search";
@@ -233,17 +226,25 @@ namespace CarRent
             this.dashboardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dashboardButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dashboardButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dashboardButton.Location = new System.Drawing.Point(0, 167);
+            this.dashboardButton.Location = new System.Drawing.Point(0, 206);
             this.dashboardButton.Margin = new System.Windows.Forms.Padding(0);
             this.dashboardButton.Name = "dashboardButton";
-            this.dashboardButton.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.dashboardButton.Size = new System.Drawing.Size(250, 60);
+            this.dashboardButton.Padding = new System.Windows.Forms.Padding(67, 0, 0, 0);
+            this.dashboardButton.Size = new System.Drawing.Size(333, 74);
             this.dashboardButton.TabIndex = 1;
             this.dashboardButton.TabStop = true;
             this.dashboardButton.Text = "DashBoard";
             this.dashboardButton.UseVisualStyleBackColor = false;
             this.dashboardButton.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             this.dashboardButton.Click += new System.EventHandler(this.radioButton1_Click);
+            // 
+            // panelContainer
+            // 
+            this.panelContainer.Location = new System.Drawing.Point(333, 123);
+            this.panelContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(1032, 738);
+            this.panelContainer.TabIndex = 3;
             // 
             // guna2Panel3
             // 
@@ -253,9 +254,10 @@ namespace CarRent
             this.guna2Panel3.Controls.Add(this.label2);
             this.guna2Panel3.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(250, 168);
+            this.guna2Panel3.Size = new System.Drawing.Size(333, 207);
             this.guna2Panel3.TabIndex = 0;
             // 
             // label2
@@ -264,9 +266,10 @@ namespace CarRent
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(81, 129);
+            this.label2.Location = new System.Drawing.Point(108, 159);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 20);
+            this.label2.Size = new System.Drawing.Size(105, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "John Doe";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -278,40 +281,50 @@ namespace CarRent
             this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = global::CarRent.Properties.Resources.images_1;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(76, 15);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(101, 18);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(100, 100);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(133, 123);
             this.guna2PictureBox2.TabIndex = 0;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // panelContainer
+            // guna2PictureBox1
             // 
-            this.panelContainer.Location = new System.Drawing.Point(250, 100);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(774, 600);
-            this.panelContainer.TabIndex = 3;
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.BackgroundImage = global::CarRent.Properties.Resources.Carsons_Logo_white;
+            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox1.Image = global::CarRent.Properties.Resources.Carsons_Logo_white;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(61, 16);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(267, 90);
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 700);
+            this.ClientSize = new System.Drawing.Size(1365, 862);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

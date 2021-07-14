@@ -115,5 +115,18 @@ namespace CarRent
             panelContainer.Controls.Add(uc);
             panelContainer.Controls["US_Reserved"].BringToFront();
         }
+
+        private void usersButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usersButton_Click(object sender, EventArgs e)
+        {
+            US_Users uc = new US_Users();
+            uc.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(uc);
+            panelContainer.Controls["US_Users"].BringToFront();
+        }
     }
 }

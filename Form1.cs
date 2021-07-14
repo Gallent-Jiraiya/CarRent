@@ -99,5 +99,13 @@ namespace CarRent
             panelContainer.Controls.Add(ucSrch);
             panelContainer.Controls["US_Search"].BringToFront();
         }
+
+        private void onrentButton_Click(object sender, EventArgs e)
+        {
+            US_ ucSrch = new US_Search();
+            ucSrch.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucSrch);
+            panelContainer.Controls["US_Search"].BringToFront();
+        }
     }
 }

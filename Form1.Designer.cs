@@ -148,6 +148,7 @@ namespace CarRent
             this.onrentButton.Text = "OnRent";
             this.onrentButton.UseVisualStyleBackColor = true;
             this.onrentButton.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            this.onrentButton.Click += new System.EventHandler(this.onrentButton_Click);
             // 
             // reservedButton
             // 

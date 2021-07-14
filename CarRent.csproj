@@ -63,6 +63,18 @@
     <Compile Include="US_Dashboard.Designer.cs">
       <DependentUpon>US_Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="US_OnRent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="US_OnRent.Designer.cs">
+      <DependentUpon>US_OnRent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="US_Reserved.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="US_Reserved.Designer.cs">
+      <DependentUpon>US_Reserved.cs</DependentUpon>
+    </Compile>
     <Compile Include="US_Search.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -79,6 +91,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="US_Dashboard.resx">
       <DependentUpon>US_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="US_OnRent.resx">
+      <DependentUpon>US_OnRent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="US_Reserved.resx">
+      <DependentUpon>US_Reserved.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="US_Search.resx">
       <DependentUpon>US_Search.cs</DependentUpon>

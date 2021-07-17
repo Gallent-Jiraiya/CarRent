@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace CarRent
 {
-    public partial class US_Users : UserControl
+    public partial class Book_Now : Form
     {
-        public US_Users()
+        public Book_Now()
         {
             InitializeComponent();
         }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            var addEmpoyeeForm = new AddEmployees_Users();
-            addEmpoyeeForm.Show();
-        }
     }
 }
-

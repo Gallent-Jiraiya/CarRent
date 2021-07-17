@@ -56,11 +56,17 @@
     <Compile Include="AddEmployees_Users.Designer.cs">
       <DependentUpon>AddEmployees_Users.cs</DependentUpon>
     </Compile>
-    <Compile Include="Book Now.cs">
+    <Compile Include="Book_Now.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Book Now.Designer.cs">
-      <DependentUpon>Book Now.cs</DependentUpon>
+    <Compile Include="Book_Now.Designer.cs">
+      <DependentUpon>Book_Now.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editProfile_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editProfile_Users.Designer.cs">
+      <DependentUpon>editProfile_Users.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -115,8 +121,11 @@
     <EmbeddedResource Include="AddEmployees_Users.resx">
       <DependentUpon>AddEmployees_Users.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Book Now.resx">
-      <DependentUpon>Book Now.cs</DependentUpon>
+    <EmbeddedResource Include="Book_Now.resx">
+      <DependentUpon>Book_Now.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editProfile_Users.resx">
+      <DependentUpon>editProfile_Users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

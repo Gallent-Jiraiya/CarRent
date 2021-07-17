@@ -22,6 +22,18 @@ namespace CarRent
             var addEmpoyeeForm = new AddEmployees_Users();
             addEmpoyeeForm.Show();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            var editProfleForm = new editProfile_Users();
+            editProfleForm.Show();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            var removeEmployeesForm = new removeEmployee_Users();
+            removeEmployeesForm.Show();
+        }
     }
 }
 

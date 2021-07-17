@@ -16,5 +16,11 @@ namespace CarRent
         {
             InitializeComponent();
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            var bookNowForm = new Book_Now();
+            bookNowForm.Show();
+        }
     }
 }

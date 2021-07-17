@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CarRent
 {
-    public partial class removeEmployee_Users: Form
+    public partial class editProfile_Users : Form
     {
-        public removeEmployee_Users()
+        public editProfile_Users()
         {
             InitializeComponent();
         }

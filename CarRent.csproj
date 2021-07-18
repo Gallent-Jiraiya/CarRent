@@ -36,6 +36,9 @@
     <Reference Include="Guna.UI2, Version=2.0.1.9, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.1.9\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>F:\Softwares\mysql-for-visualstudio-1.2.9-noinstall\16.0v472\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -62,6 +65,7 @@
     <Compile Include="Book_Now.Designer.cs">
       <DependentUpon>Book_Now.cs</DependentUpon>
     </Compile>
+    <Compile Include="DbConnection.cs" />
     <Compile Include="editDrivers_Users.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +83,18 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOnRent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListOnRent.Designer.cs">
+      <DependentUpon>ListOnRent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListVehicle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListVehicle.Designer.cs">
+      <DependentUpon>ListVehicle.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,6 +134,12 @@
     <Compile Include="US_Users.Designer.cs">
       <DependentUpon>US_Users.cs</DependentUpon>
     </Compile>
+    <Compile Include="US_VehDet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="US_VehDet.Designer.cs">
+      <DependentUpon>US_VehDet.cs</DependentUpon>
+    </Compile>
     <Compile Include="US_Vehicles.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -138,6 +160,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOnRent.resx">
+      <DependentUpon>ListOnRent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListVehicle.resx">
+      <DependentUpon>ListVehicle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -161,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="US_Users.resx">
       <DependentUpon>US_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="US_VehDet.resx">
+      <DependentUpon>US_VehDet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="US_Vehicles.resx">
       <DependentUpon>US_Vehicles.cs</DependentUpon>
@@ -192,6 +223,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\images 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

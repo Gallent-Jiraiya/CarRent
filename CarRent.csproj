@@ -62,6 +62,12 @@
     <Compile Include="Book_Now.Designer.cs">
       <DependentUpon>Book_Now.cs</DependentUpon>
     </Compile>
+    <Compile Include="editDrivers_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editDrivers_Users.Designer.cs">
+      <DependentUpon>editDrivers_Users.cs</DependentUpon>
+    </Compile>
     <Compile Include="editProfile_Users.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Book_Now.resx">
       <DependentUpon>Book_Now.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editDrivers_Users.resx">
+      <DependentUpon>editDrivers_Users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="editProfile_Users.resx">
       <DependentUpon>editProfile_Users.cs</DependentUpon>

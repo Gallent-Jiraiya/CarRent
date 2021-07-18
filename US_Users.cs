@@ -34,6 +34,12 @@ namespace CarRent
             var removeEmployeesForm = new removeEmployee_Users();
             removeEmployeesForm.Show();
         }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            var editDriversForm = new editDrivers_Users();
+            editDriversForm.Show();
+        }
     }
 }
 

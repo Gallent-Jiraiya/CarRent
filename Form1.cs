@@ -86,34 +86,66 @@ namespace CarRent
         private void Form1_Load(object sender, EventArgs e)
         {
             _obj = this;
-            US_Dashboard uc = new US_Dashboard();
-            uc.Dock = DockStyle.Fill;
-            panelContainer.Controls.Add(uc);
+            US_Dashboard ucDash = new US_Dashboard();
+            ucDash.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucDash);
+            US_Search ucSrch = new US_Search();
+            ucSrch.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucSrch);
+            US_OnRent ucOnrent = new US_OnRent();
+            ucOnrent.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucOnrent);
+            US_Reserved ucReserve = new US_Reserved();
+            ucReserve.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucReserve);
+            US_Users ucUsers = new US_Users();
+            ucUsers.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucUsers);
+            US_Vehicles ucVehicles = new US_Vehicles();
+            ucVehicles.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucVehicles);
+
 
         }
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            US_Search ucSrch = new US_Search();
-            ucSrch.Dock = DockStyle.Fill;
-            panelContainer.Controls.Add(ucSrch);
+            
             panelContainer.Controls["US_Search"].BringToFront();
         }
 
         private void onrentButton_Click(object sender, EventArgs e)
         {
-            US_OnRent uc = new US_OnRent();
-            uc.Dock = DockStyle.Fill;
-            panelContainer.Controls.Add(uc);
+            
             panelContainer.Controls["US_OnRent"].BringToFront();
         }
 
         private void reservedButton_Click(object sender, EventArgs e)
         {
-            US_Reserved uc = new US_Reserved();
-            uc.Dock = DockStyle.Fill;
-            panelContainer.Controls.Add(uc);
+            
             panelContainer.Controls["US_Reserved"].BringToFront();
+        }
+
+        private void usersButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usersButton_Click(object sender, EventArgs e)
+        {
+            
+            panelContainer.Controls["US_Users"].BringToFront();
+        }
+
+        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void vehiclesButton_Click(object sender, EventArgs e)
+        {
+            
+            panelContainer.Controls["US_Vehicles"].BringToFront();
         }
     }
 }

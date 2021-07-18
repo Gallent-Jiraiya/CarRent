@@ -36,7 +36,7 @@ namespace CarRent
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "US_OnRent";
-            this.Size = new System.Drawing.Size(774, 600);
+            this.Size = new System.Drawing.Size(774, 540);
             this.ResumeLayout(false);
 
         }

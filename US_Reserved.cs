@@ -16,5 +16,15 @@ namespace CarRent
         {
             InitializeComponent();
         }
+
+        private void guna2VScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+
+        }
+
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+
+        }
     }
 }

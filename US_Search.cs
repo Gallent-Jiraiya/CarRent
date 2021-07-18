@@ -22,5 +22,10 @@ namespace CarRent
             var bookNowForm = new Book_Now();
             bookNowForm.Show();
         }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

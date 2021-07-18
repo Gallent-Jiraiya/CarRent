@@ -85,8 +85,8 @@ namespace CarRent
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -119,7 +119,7 @@ namespace CarRent
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(774, 540);
@@ -135,7 +135,7 @@ namespace CarRent
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Controls.Add(this.panel4);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(274, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(486, 540);
             this.flowLayoutPanel1.TabIndex = 5;
@@ -153,7 +153,7 @@ namespace CarRent
             this.panel2.Controls.Add(this.label21);
             this.panel2.Controls.Add(this.guna2PictureBox2);
             this.panel2.Location = new System.Drawing.Point(2, 2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(468, 158);
             this.panel2.TabIndex = 0;
@@ -172,7 +172,7 @@ namespace CarRent
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Location = new System.Drawing.Point(364, 72);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
             this.guna2Button3.Size = new System.Drawing.Size(86, 24);
@@ -264,7 +264,7 @@ namespace CarRent
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
             this.guna2PictureBox2.Size = new System.Drawing.Size(140, 156);
@@ -285,7 +285,7 @@ namespace CarRent
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.guna2PictureBox1);
             this.panel1.Location = new System.Drawing.Point(2, 164);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(468, 158);
             this.panel1.TabIndex = 0;
@@ -304,7 +304,7 @@ namespace CarRent
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Location = new System.Drawing.Point(364, 72);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(86, 24);
@@ -395,7 +395,7 @@ namespace CarRent
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(140, 156);
@@ -416,7 +416,7 @@ namespace CarRent
             this.panel3.Controls.Add(this.label28);
             this.panel3.Controls.Add(this.guna2PictureBox3);
             this.panel3.Location = new System.Drawing.Point(2, 326);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(468, 158);
             this.panel3.TabIndex = 0;
@@ -435,7 +435,7 @@ namespace CarRent
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
             this.guna2Button4.Location = new System.Drawing.Point(364, 72);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
             this.guna2Button4.Size = new System.Drawing.Size(86, 24);
@@ -526,7 +526,7 @@ namespace CarRent
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
             this.guna2PictureBox3.ImageRotate = 0F;
             this.guna2PictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
             this.guna2PictureBox3.Size = new System.Drawing.Size(140, 156);
@@ -547,10 +547,11 @@ namespace CarRent
             this.panel4.Controls.Add(this.label35);
             this.panel4.Controls.Add(this.guna2PictureBox4);
             this.panel4.Location = new System.Drawing.Point(2, 488);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(468, 158);
             this.panel4.TabIndex = 0;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // guna2Button5
             // 
@@ -566,7 +567,7 @@ namespace CarRent
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
             this.guna2Button5.Location = new System.Drawing.Point(364, 72);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
             this.guna2Button5.Size = new System.Drawing.Size(86, 24);
@@ -657,7 +658,7 @@ namespace CarRent
             this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
             this.guna2PictureBox4.ImageRotate = 0F;
             this.guna2PictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
             this.guna2PictureBox4.ShadowDecoration.Parent = this.guna2PictureBox4;
             this.guna2PictureBox4.Size = new System.Drawing.Size(140, 156);
@@ -669,7 +670,7 @@ namespace CarRent
             // 
             this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePicker4.Location = new System.Drawing.Point(144, 221);
-            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.Size = new System.Drawing.Size(78, 20);
             this.dateTimePicker4.TabIndex = 2;
@@ -678,7 +679,7 @@ namespace CarRent
             // 
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker3.Location = new System.Drawing.Point(34, 221);
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(78, 20);
             this.dateTimePicker3.TabIndex = 2;
@@ -687,7 +688,7 @@ namespace CarRent
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePicker2.Location = new System.Drawing.Point(144, 171);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(78, 20);
             this.dateTimePicker2.TabIndex = 2;
@@ -708,7 +709,7 @@ namespace CarRent
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(34, 171);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(78, 20);
             this.dateTimePicker1.TabIndex = 2;
@@ -741,7 +742,7 @@ namespace CarRent
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(34, 274);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(188, 19);
             this.textBox2.TabIndex = 1;
@@ -750,7 +751,7 @@ namespace CarRent
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(34, 122);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(188, 19);
             this.textBox1.TabIndex = 1;
@@ -797,32 +798,11 @@ namespace CarRent
             this.guna2Panel2.Controls.Add(this.guna2Button1);
             this.guna2Panel2.FillColor = System.Drawing.Color.Gainsboro;
             this.guna2Panel2.Location = new System.Drawing.Point(16, 88);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(224, 333);
             this.guna2Panel2.TabIndex = 4;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Maroon;
-            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(40, 274);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(135, 37);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "Search";
             // 
             // guna2CheckBox1
             // 
@@ -840,6 +820,27 @@ namespace CarRent
             this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
             this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
             this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Maroon;
+            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(40, 274);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(135, 37);
+            this.guna2Button1.TabIndex = 3;
+            this.guna2Button1.Text = "Search";
             // 
             // US_Search
             // 

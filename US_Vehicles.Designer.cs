@@ -335,14 +335,12 @@ namespace CarRent
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "US_Vehicles";
-<<<<<<< HEAD
+
             this.Size = new System.Drawing.Size(774, 600);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-=======
             this.Size = new System.Drawing.Size(774, 540);
->>>>>>> a7f70c52103758390cd83e6bfb0e1f33e4128fc5
             this.ResumeLayout(false);
             this.PerformLayout();
 

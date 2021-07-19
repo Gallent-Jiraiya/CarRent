@@ -16,5 +16,10 @@ namespace CarRent
         {
             InitializeComponent();
         }
+
+        private void US_Reserved_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

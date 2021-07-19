@@ -94,9 +94,9 @@ namespace CarRent
             this.fromDate,
             this.toDate,
             this.driverName});
-            this.dataGridView1.Location = new System.Drawing.Point(421, 90);
+            this.dataGridView1.Location = new System.Drawing.Point(380, 90);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(350, 417);
+            this.dataGridView1.Size = new System.Drawing.Size(391, 417);
             this.dataGridView1.TabIndex = 2;
             // 
             // rentId
@@ -142,7 +142,7 @@ namespace CarRent
             this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(122, 479);
+            this.guna2Button1.Location = new System.Drawing.Point(96, 479);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
@@ -156,7 +156,7 @@ namespace CarRent
             this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker2.HoverState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(173, 349);
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(147, 349);
             this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
@@ -171,7 +171,7 @@ namespace CarRent
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(173, 301);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(147, 301);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
@@ -184,7 +184,7 @@ namespace CarRent
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(33, 361);
+            this.label10.Location = new System.Drawing.Point(7, 361);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(69, 18);
@@ -195,7 +195,7 @@ namespace CarRent
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(33, 314);
+            this.label9.Location = new System.Drawing.Point(7, 314);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(74, 18);
@@ -204,7 +204,7 @@ namespace CarRent
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(173, 239);
+            this.textBox6.Location = new System.Drawing.Point(147, 239);
             this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(228, 20);
@@ -212,7 +212,7 @@ namespace CarRent
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(173, 208);
+            this.textBox5.Location = new System.Drawing.Point(147, 208);
             this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(228, 20);
@@ -222,7 +222,7 @@ namespace CarRent
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(32, 240);
+            this.label8.Location = new System.Drawing.Point(6, 240);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(94, 18);
@@ -231,7 +231,7 @@ namespace CarRent
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(173, 174);
+            this.textBox4.Location = new System.Drawing.Point(147, 174);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(228, 20);
@@ -241,7 +241,7 @@ namespace CarRent
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(32, 208);
+            this.label7.Location = new System.Drawing.Point(6, 208);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 18);
@@ -252,7 +252,7 @@ namespace CarRent
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(32, 175);
+            this.label6.Location = new System.Drawing.Point(6, 175);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(134, 18);
@@ -261,7 +261,7 @@ namespace CarRent
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(173, 143);
+            this.textBox3.Location = new System.Drawing.Point(147, 143);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(228, 20);
@@ -271,7 +271,7 @@ namespace CarRent
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(32, 144);
+            this.label5.Location = new System.Drawing.Point(6, 144);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 18);
@@ -280,7 +280,7 @@ namespace CarRent
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(173, 113);
+            this.textBox2.Location = new System.Drawing.Point(147, 113);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(228, 20);
@@ -290,7 +290,7 @@ namespace CarRent
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(32, 113);
+            this.label4.Location = new System.Drawing.Point(6, 113);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 18);
@@ -299,7 +299,7 @@ namespace CarRent
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(173, 80);
+            this.textBox7.Location = new System.Drawing.Point(147, 80);
             this.textBox7.Margin = new System.Windows.Forms.Padding(2);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(228, 20);
@@ -309,7 +309,7 @@ namespace CarRent
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(32, 81);
+            this.label3.Location = new System.Drawing.Point(6, 81);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 18);
@@ -320,7 +320,7 @@ namespace CarRent
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(134, 37);
+            this.label2.Location = new System.Drawing.Point(108, 37);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 20);
@@ -329,7 +329,7 @@ namespace CarRent
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(173, 270);
+            this.textBox8.Location = new System.Drawing.Point(147, 270);
             this.textBox8.Margin = new System.Windows.Forms.Padding(2);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(228, 20);
@@ -339,7 +339,7 @@ namespace CarRent
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(32, 271);
+            this.label11.Location = new System.Drawing.Point(6, 271);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(89, 18);
@@ -349,7 +349,7 @@ namespace CarRent
             // textBox9
             // 
             this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(173, 400);
+            this.textBox9.Location = new System.Drawing.Point(147, 400);
             this.textBox9.Margin = new System.Windows.Forms.Padding(2);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(228, 20);
@@ -359,7 +359,7 @@ namespace CarRent
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(32, 401);
+            this.label12.Location = new System.Drawing.Point(6, 401);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(79, 18);
@@ -368,7 +368,7 @@ namespace CarRent
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(173, 433);
+            this.textBox10.Location = new System.Drawing.Point(147, 433);
             this.textBox10.Margin = new System.Windows.Forms.Padding(2);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(228, 20);
@@ -378,7 +378,7 @@ namespace CarRent
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(32, 434);
+            this.label13.Location = new System.Drawing.Point(6, 434);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(101, 18);

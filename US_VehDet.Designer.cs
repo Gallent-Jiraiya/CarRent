@@ -47,10 +47,10 @@ namespace CarRent
             this.FreeMileage = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Delete = new System.Windows.Forms.Button();
+            this.btn_Edit = new System.Windows.Forms.Button();
+            this.btn_Add = new System.Windows.Forms.Button();
+            this.btn_Reset = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.PricePerKM = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -81,10 +81,10 @@ namespace CarRent
             this.panel1.Controls.Add(this.FreeMileage);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btn_Delete);
+            this.panel1.Controls.Add(this.btn_Edit);
+            this.panel1.Controls.Add(this.btn_Add);
+            this.panel1.Controls.Add(this.btn_Reset);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.PricePerKM);
             this.panel1.Controls.Add(this.label11);
@@ -106,7 +106,6 @@ namespace CarRent
             this.passenger.Name = "passenger";
             this.passenger.Size = new System.Drawing.Size(174, 20);
             this.passenger.TabIndex = 29;
-            this.passenger.TextChanged += new System.EventHandler(this.Passenger_TextChanged);
             // 
             // label12
             // 
@@ -140,7 +139,6 @@ namespace CarRent
             this.Rad_Full.TabStop = true;
             this.Rad_Full.Text = "Full";
             this.Rad_Full.UseVisualStyleBackColor = false;
-            this.Rad_Full.CheckedChanged += new System.EventHandler(this.Rad_Full_CheckedChanged);
             // 
             // Rad_NoAir
             // 
@@ -153,7 +151,6 @@ namespace CarRent
             this.Rad_NoAir.TabStop = true;
             this.Rad_NoAir.Text = "No";
             this.Rad_NoAir.UseVisualStyleBackColor = false;
-            this.Rad_NoAir.CheckedChanged += new System.EventHandler(this.Rad_NoAir_CheckedChanged);
             // 
             // panel2
             // 
@@ -176,20 +173,18 @@ namespace CarRent
             this.Rad_Manual.TabStop = true;
             this.Rad_Manual.Text = "Manual";
             this.Rad_Manual.UseVisualStyleBackColor = false;
-            this.Rad_Manual.CheckedChanged += new System.EventHandler(this.Rad_Manual_CheckedChanged);
             // 
             // Rad_Auto
             // 
             this.Rad_Auto.AutoSize = true;
             this.Rad_Auto.BackColor = System.Drawing.Color.Transparent;
-            this.Rad_Auto.Location = new System.Drawing.Point(7, 0);
+            this.Rad_Auto.Location = new System.Drawing.Point(7, 1);
             this.Rad_Auto.Name = "Rad_Auto";
             this.Rad_Auto.Size = new System.Drawing.Size(47, 17);
             this.Rad_Auto.TabIndex = 0;
             this.Rad_Auto.TabStop = true;
             this.Rad_Auto.Text = "Auto";
             this.Rad_Auto.UseVisualStyleBackColor = false;
-            this.Rad_Auto.CheckedChanged += new System.EventHandler(this.Rad_Auto_CheckedChanged);
             // 
             // Cmb_Luggage
             // 
@@ -209,7 +204,6 @@ namespace CarRent
             this.Cmb_Luggage.Name = "Cmb_Luggage";
             this.Cmb_Luggage.Size = new System.Drawing.Size(174, 21);
             this.Cmb_Luggage.TabIndex = 25;
-            this.Cmb_Luggage.SelectedIndexChanged += new System.EventHandler(this.Cmb_Luggage_SelectedIndexChanged);
             // 
             // ModelYear
             // 
@@ -217,7 +211,6 @@ namespace CarRent
             this.ModelYear.Name = "ModelYear";
             this.ModelYear.Size = new System.Drawing.Size(174, 20);
             this.ModelYear.TabIndex = 24;
-            this.ModelYear.TextChanged += new System.EventHandler(this.ModelYear_TextChanged);
             // 
             // label9
             // 
@@ -293,61 +286,61 @@ namespace CarRent
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // button4
+            // btn_Delete
             // 
-            this.button4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(195, 443);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(138, 30);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Delete";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btn_Delete.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Delete.FlatAppearance.BorderSize = 0;
+            this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Delete.Location = new System.Drawing.Point(195, 443);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(138, 30);
+            this.btn_Delete.TabIndex = 11;
+            this.btn_Delete.Text = "Delete";
+            this.btn_Delete.UseVisualStyleBackColor = false;
+            this.btn_Delete.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // btn_Edit
             // 
-            this.button3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(20, 443);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(138, 30);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Edit";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn_Edit.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Edit.FlatAppearance.BorderSize = 0;
+            this.btn_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Edit.Location = new System.Drawing.Point(20, 443);
+            this.btn_Edit.Name = "btn_Edit";
+            this.btn_Edit.Size = new System.Drawing.Size(138, 30);
+            this.btn_Edit.TabIndex = 11;
+            this.btn_Edit.Text = "Edit";
+            this.btn_Edit.UseVisualStyleBackColor = false;
+            this.btn_Edit.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btn_Add
             // 
-            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(195, 394);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 30);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_Add.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Add.FlatAppearance.BorderSize = 0;
+            this.btn_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Add.Location = new System.Drawing.Point(195, 394);
+            this.btn_Add.Name = "btn_Add";
+            this.btn_Add.Size = new System.Drawing.Size(138, 30);
+            this.btn_Add.TabIndex = 11;
+            this.btn_Add.Text = "Add";
+            this.btn_Add.UseVisualStyleBackColor = false;
+            this.btn_Add.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btn_Reset
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(20, 394);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 30);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Reset";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Reset.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Reset.FlatAppearance.BorderSize = 0;
+            this.btn_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Reset.Location = new System.Drawing.Point(20, 394);
+            this.btn_Reset.Name = "btn_Reset";
+            this.btn_Reset.Size = new System.Drawing.Size(138, 30);
+            this.btn_Reset.TabIndex = 11;
+            this.btn_Reset.Text = "Reset";
+            this.btn_Reset.UseVisualStyleBackColor = false;
+            this.btn_Reset.Click += new System.EventHandler(this.button1_Click);
             // 
             // label10
             // 
@@ -366,7 +359,6 @@ namespace CarRent
             this.PricePerKM.Name = "PricePerKM";
             this.PricePerKM.Size = new System.Drawing.Size(174, 20);
             this.PricePerKM.TabIndex = 9;
-            this.PricePerKM.TextChanged += new System.EventHandler(this.PricePerKM_TextChanged);
             // 
             // label11
             // 
@@ -385,7 +377,6 @@ namespace CarRent
             this.RentingPrice.Name = "RentingPrice";
             this.RentingPrice.Size = new System.Drawing.Size(174, 20);
             this.RentingPrice.TabIndex = 9;
-            this.RentingPrice.TextChanged += new System.EventHandler(this.RentingPrice_TextChanged);
             // 
             // label8
             // 
@@ -404,7 +395,6 @@ namespace CarRent
             this.ModelVeh.Name = "ModelVeh";
             this.ModelVeh.Size = new System.Drawing.Size(174, 20);
             this.ModelVeh.TabIndex = 1;
-            this.ModelVeh.TextChanged += new System.EventHandler(this.ModelVeh_TextChanged);
             // 
             // Regno
             // 
@@ -412,7 +402,6 @@ namespace CarRent
             this.Regno.Name = "Regno";
             this.Regno.Size = new System.Drawing.Size(174, 20);
             this.Regno.TabIndex = 1;
-            this.Regno.TextChanged += new System.EventHandler(this.RegNo_TextChanged);
             // 
             // label3
             // 
@@ -474,10 +463,10 @@ namespace CarRent
         private System.Windows.Forms.TextBox FreeMileage;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Delete;
+        private System.Windows.Forms.Button btn_Edit;
+        private System.Windows.Forms.Button btn_Add;
+        private System.Windows.Forms.Button btn_Reset;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox PricePerKM;
         private System.Windows.Forms.Label label11;

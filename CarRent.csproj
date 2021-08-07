@@ -84,12 +84,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListOnRent.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ListOnRent.Designer.cs">
-      <DependentUpon>ListOnRent.cs</DependentUpon>
-    </Compile>
     <Compile Include="ListVehicle.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -160,9 +154,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListOnRent.resx">
-      <DependentUpon>ListOnRent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListVehicle.resx">
       <DependentUpon>ListVehicle.cs</DependentUpon>

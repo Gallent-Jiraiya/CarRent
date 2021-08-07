@@ -19,26 +19,6 @@ namespace CarRent
         {
             InitializeComponent();
         }
-        
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void US_Vehicles_Load(object sender, EventArgs e)
         {
@@ -97,10 +77,6 @@ namespace CarRent
             }
         }
 
-        private void uS_VehDet1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {

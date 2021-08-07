@@ -166,11 +166,6 @@ namespace CarRent
         }
         #endregion
 
-        private void Passenger_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void label12_Click(object sender, EventArgs e)
         {
 
@@ -181,37 +176,7 @@ namespace CarRent
 
         }
 
-        private void Rad_Full_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Rad_NoAir_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Rad_Manual_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Rad_Auto_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Cmb_Luggage_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ModelYear_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -271,32 +236,12 @@ namespace CarRent
 
         }
 
-        private void PricePerKM_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void label11_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void RentingPrice_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ModelVeh_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RegNo_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -62,6 +62,11 @@ namespace CarRent
                     {
 
                         MessageBox.Show("Login Sucsses");
+                        Ureference usr = new Ureference()
+                        {
+                            User = txt_user.Text
+                        };
+
                         Form1 frm1 = new Form1();
                         frm1.Show();
                     }

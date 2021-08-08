@@ -91,6 +91,7 @@
     <Compile Include="RemoveEmployee_Users.Designer.cs">
       <DependentUpon>RemoveEmployee_Users.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ureference.cs" />
     <Compile Include="US_Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>

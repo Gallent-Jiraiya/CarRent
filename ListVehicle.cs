@@ -33,7 +33,7 @@ namespace CarRent
         public String RegNo
         {
             get { return _regNo; }
-            set { _regNo = value; }
+            set { _regNo = value; Lbl_RegNo.Text = "Reg. Num: " + value; }
         }
 
         public String Year
@@ -144,8 +144,8 @@ namespace CarRent
             US_Vehicles veh = new US_Vehicles();
             veh.editPanel(item);
             this.Parent.Parent.Controls.Add(veh);
-            this.Parent.Parent.Controls.RemoveAt(2);
-
+            this.Parent.Parent.Controls[5].Dispose();
+            
 
         }
     }

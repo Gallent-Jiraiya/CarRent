@@ -10,7 +10,7 @@ namespace CarRent
     public class DbConnection
     {
 
-        MySqlConnection connection = new MySqlConnection("user id=root;server=localhost;database=carrent;port=3307;");
+        MySqlConnection connection = new MySqlConnection("user id=root;server=localhost;database=carrent;port=3306;");
         public MySqlConnection getDb
         {
             get { return connection; }

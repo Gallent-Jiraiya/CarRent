@@ -58,13 +58,17 @@ namespace CarRent
             {
                 MessageBox.Show("Please enter the password", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+            else if (comboBox1.Text != "Admin" && comboBox1.Text != "Staff")
+            {
+                MessageBox.Show("Please select a type", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
             else
             {
                 if (guna2TextBox3.Text.Length == 10 || guna2TextBox3.Text.Length == 11)
                 {
                     dbSetUser add = new dbSetUser();
-                    add.userInsert_value(guna2TextBox1.Text, guna2TextBox2.Text, guna2TextBox3.Text, guna2TextBox4.Text, guna2TextBox5.Text, guna2TextBox8.Text, guna2TextBox6.Text, guna2TextBox7.Text);
+                    add.userInsert_value(guna2TextBox1.Text, guna2TextBox2.Text, guna2TextBox3.Text, guna2TextBox4.Text, guna2TextBox5.Text, guna2TextBox8.Text, guna2TextBox6.Text, guna2TextBox7.Text, comboBox1.Text);
                 }
                 else
                 {
@@ -83,6 +87,7 @@ namespace CarRent
             guna2TextBox6.Text = "";
             guna2TextBox7.Text = "";
             guna2TextBox8.Text = "";
+            comboBox1.Text = "";
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -91,6 +96,11 @@ namespace CarRent
         }
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

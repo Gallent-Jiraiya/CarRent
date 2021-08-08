@@ -67,6 +67,7 @@
       <DependentUpon>Book_Now.cs</DependentUpon>
     </Compile>
     <Compile Include="DbConnection.cs" />
+    <Compile Include="dbSetUser.cs" />
     <Compile Include="editDrivers_Users.cs">
       <SubType>Form</SubType>
     </Compile>

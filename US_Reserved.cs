@@ -21,15 +21,7 @@ namespace CarRent
 
         private void US_Reserved_Load(object sender, EventArgs e)
         {
-           /* MySqlConnection con = new MySqlConnection("datasource= localhost; database=carrent; port=3306; username = root;");
-            con.Open();
-            dataGridView1.DataSource = null;
-            MySqlDataAdapter adapter = new MySqlDataAdapter("select * from rent", con);
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            dataGridView1.DataSource = dt;
-            con.Close();*/
-
+           
             try
             {
                 string MyConnection2 = "datasource= localhost; database=carrent; port=3306; username = root;";
@@ -43,21 +35,13 @@ namespace CarRent
                 MyAdapter.SelectCommand = MyCommand2;
                 DataTable dTable = new DataTable();
                 MyAdapter.Fill(dTable);
-                dataGridView1.DataSource = dTable; // here i have assign dTable object to the dataGridView1 object to display data.               
-                                                   // MyConn2.Close();  
+                dataGridView1.DataSource = dTable; 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
-            //MySqlConnection con = new MySqlConnection("user id = root; server = localhost; database = carrent; port = 3306;");
-            //MySqlCommand cm = new MySqlCommand("SELECT * FROM `rent`", con);
-            //MySqlDataAdapter da = new MySqlDataAdapter(cm);
-            //DataTable dt = new DataTable();
-            //da.Fill(dt);
-
-            //dataGridView1.DataSource = dt;
 
         }
 
@@ -96,6 +80,11 @@ namespace CarRent
             reserveInvoice.startDate = dtp_start.Text;
             reserveInvoice.endDate = dtp_end.Text;
             reserveInvoice.ShowDialog();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

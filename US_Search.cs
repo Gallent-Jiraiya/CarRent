@@ -30,7 +30,6 @@ namespace CarRent
             {
                 MySqlConnection con = new DbConnection().getDb;
                 con.Open();
-
                 MySqlCommand cmd = new MySqlCommand(Query, con);
                 MySqlDataReader dr = cmd.ExecuteReader();
                 if (flowLayoutPanel1.Controls.Count > 0)
@@ -39,6 +38,8 @@ namespace CarRent
                     flowLayoutPanel1.Controls.Clear();
 
                 }
+                String startdate = guna2DateTimePicker1.Value.Date.ToString("yyyyMMdd");
+                String endDate = guna2DateTimePicker2.Value.Date.ToString("yyyyMMdd");
                 while (dr.Read())
                 {
                     SearchVehicle item = new SearchVehicle();
@@ -54,7 +55,8 @@ namespace CarRent
                     item.PerKm = int.Parse(dr.GetString("pricePerExtraKM"));
                     item.Model = dr.GetString("brand");
                     item.Luggage = dr.GetString("Luggage");
-                    
+                    item.StartDay = startdate;
+                    item.EndDay = endDate;
 
                     if (flowLayoutPanel1.Controls.Count < 0)
                     {
@@ -78,6 +80,21 @@ namespace CarRent
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            int days = int.Parse(txt_NoDays.Text);
+            String search = txt_Search.Text;
+            string trans=null;
+            if (rad_Auto.Checked)
+            {
+                trans = "Auto";
+            }
+            if (rad_Manual.Checked)
+            {
+                trans = "Manual";
+            }
+            String startdate=guna2DateTimePicker1.Value.Date.ToString("yyyyMMdd");
+            String endDate=guna2DateTimePicker2.Value.Date.ToString("yyyyMMdd");
+            string sql = "SELECT * FROM vehicle WHERE regNum NOT IN(SELECT vehicleRegNum FROM rent WHERE  '"+startdate+"'  BETWEEN fromDate AND toDate OR '"+endDate+"'  BETWEEN fromDate AND toDate)";
+            loadVehicles(sql, days);
 
         }
 

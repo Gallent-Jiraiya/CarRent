@@ -32,7 +32,21 @@ namespace CarRent
         private String _regNo;
         private int _days;
 
-       
+        private string _startDays;
+
+        public string StartDay
+        {
+            get { return _startDays; }
+            set { _startDays = value; }
+        }
+
+        private string _endDay;
+
+        public string EndDay
+        {
+            get { return _endDay; }
+            set { _endDay = value; }
+        }
 
 
         public String RegNo

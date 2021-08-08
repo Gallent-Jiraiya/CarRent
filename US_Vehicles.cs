@@ -113,5 +113,10 @@ namespace CarRent
             string text = textBox1.Text;
             loadVehicles("SELECT * FROM `vehicle` where regNum like '%"+text+ "%' OR brand like '%" + text + "%'");
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

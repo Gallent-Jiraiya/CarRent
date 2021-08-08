@@ -33,6 +33,7 @@ namespace CarRent
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.txt_Search = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_NoDays = new System.Windows.Forms.TextBox();
@@ -42,7 +43,7 @@ namespace CarRent
             this.rad_Manual = new System.Windows.Forms.RadioButton();
             this.rad_Auto = new System.Windows.Forms.RadioButton();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.txt_Search = new System.Windows.Forms.TextBox();
+            this.rad_Both = new System.Windows.Forms.RadioButton();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -86,6 +87,7 @@ namespace CarRent
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.rad_Both);
             this.guna2Panel2.Controls.Add(this.txt_Search);
             this.guna2Panel2.Controls.Add(this.label2);
             this.guna2Panel2.Controls.Add(this.label4);
@@ -103,6 +105,14 @@ namespace CarRent
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(259, 365);
             this.guna2Panel2.TabIndex = 4;
+            // 
+            // txt_Search
+            // 
+            this.txt_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Search.Location = new System.Drawing.Point(19, 266);
+            this.txt_Search.Name = "txt_Search";
+            this.txt_Search.Size = new System.Drawing.Size(220, 26);
+            this.txt_Search.TabIndex = 13;
             // 
             // label2
             // 
@@ -185,7 +195,7 @@ namespace CarRent
             // 
             this.rad_Manual.AutoSize = true;
             this.rad_Manual.BackColor = System.Drawing.Color.Transparent;
-            this.rad_Manual.Location = new System.Drawing.Point(125, 227);
+            this.rad_Manual.Location = new System.Drawing.Point(174, 227);
             this.rad_Manual.Name = "rad_Manual";
             this.rad_Manual.Size = new System.Drawing.Size(60, 17);
             this.rad_Manual.TabIndex = 6;
@@ -196,7 +206,7 @@ namespace CarRent
             // 
             this.rad_Auto.AutoSize = true;
             this.rad_Auto.BackColor = System.Drawing.Color.Transparent;
-            this.rad_Auto.Location = new System.Drawing.Point(22, 227);
+            this.rad_Auto.Location = new System.Drawing.Point(101, 227);
             this.rad_Auto.Name = "rad_Auto";
             this.rad_Auto.Size = new System.Drawing.Size(47, 17);
             this.rad_Auto.TabIndex = 5;
@@ -225,13 +235,18 @@ namespace CarRent
             this.guna2Button1.Text = "Search";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // txt_Search
+            // rad_Both
             // 
-            this.txt_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Search.Location = new System.Drawing.Point(19, 266);
-            this.txt_Search.Name = "txt_Search";
-            this.txt_Search.Size = new System.Drawing.Size(220, 26);
-            this.txt_Search.TabIndex = 13;
+            this.rad_Both.AutoSize = true;
+            this.rad_Both.BackColor = System.Drawing.Color.Transparent;
+            this.rad_Both.Checked = true;
+            this.rad_Both.Location = new System.Drawing.Point(23, 228);
+            this.rad_Both.Name = "rad_Both";
+            this.rad_Both.Size = new System.Drawing.Size(47, 17);
+            this.rad_Both.TabIndex = 14;
+            this.rad_Both.TabStop = true;
+            this.rad_Both.Text = "Both";
+            this.rad_Both.UseVisualStyleBackColor = false;
             // 
             // US_Search
             // 
@@ -265,5 +280,6 @@ namespace CarRent
         private System.Windows.Forms.TextBox txt_NoDays;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_Search;
+        private System.Windows.Forms.RadioButton rad_Both;
     }
 }

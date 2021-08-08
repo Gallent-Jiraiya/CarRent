@@ -36,7 +36,10 @@
     <Reference Include="Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.1.8\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>16.0v472\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -63,12 +66,26 @@
     <Compile Include="Book_Now.Designer.cs">
       <DependentUpon>Book_Now.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cryptography.cs" />
+    <Compile Include="DbConnection.cs" />
+    <Compile Include="deleteVehicleImage.cs" />
+    <Compile Include="dbSetUser.cs" />
+    <Compile Include="editDrivers_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editDrivers_Users.Designer.cs">
+      <DependentUpon>editDrivers_Users.cs</DependentUpon>
+    </Compile>
     <Compile Include="editProfile_Users.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="editProfile_Users.Designer.cs">
       <DependentUpon>editProfile_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EndRentInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EndRentInvoice.Designer.cs">
+      <DependentUpon>EndRentInvoice.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -83,6 +100,18 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="HashCode.cs" />
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListVehicle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListVehicle.Designer.cs">
+      <DependentUpon>ListVehicle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveEmployee_Users.cs">
@@ -90,6 +119,12 @@
     </Compile>
     <Compile Include="RemoveEmployee_Users.Designer.cs">
       <DependentUpon>RemoveEmployee_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchVehicle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchVehicle.Designer.cs">
+      <DependentUpon>SearchVehicle.cs</DependentUpon>
     </Compile>
     <Compile Include="Ureference.cs" />
     <Compile Include="US_Dashboard.cs">
@@ -122,6 +157,12 @@
     <Compile Include="US_Users.Designer.cs">
       <DependentUpon>US_Users.cs</DependentUpon>
     </Compile>
+    <Compile Include="US_VehDet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="US_VehDet.Designer.cs">
+      <DependentUpon>US_VehDet.cs</DependentUpon>
+    </Compile>
     <Compile Include="US_Vehicles.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -134,14 +175,26 @@
     <EmbeddedResource Include="Book_Now.resx">
       <DependentUpon>Book_Now.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="editDrivers_Users.resx">
+      <DependentUpon>editDrivers_Users.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="editProfile_Users.resx">
       <DependentUpon>editProfile_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndRentInvoice.resx">
+      <DependentUpon>EndRentInvoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListVehicle.resx">
+      <DependentUpon>ListVehicle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -150,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RemoveEmployee_Users.resx">
       <DependentUpon>RemoveEmployee_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchVehicle.resx">
+      <DependentUpon>SearchVehicle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="US_Dashboard.resx">
       <DependentUpon>US_Dashboard.cs</DependentUpon>
@@ -165,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="US_Users.resx">
       <DependentUpon>US_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="US_VehDet.resx">
+      <DependentUpon>US_VehDet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="US_Vehicles.resx">
       <DependentUpon>US_Vehicles.cs</DependentUpon>
@@ -196,6 +255,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\images 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

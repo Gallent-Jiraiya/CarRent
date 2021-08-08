@@ -74,7 +74,19 @@ namespace CarRent
 
         private void button1_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            
+            System.Environment.Exit(1);
+            /*int count = deleteVehicleImage.names.Count;
+            for (int i = 0; i < count; i++)
+            {
+                Console.WriteLine(deleteVehicleImage.names[i]);
+                if (System.IO.File.Exists("../../Images/Vehicles/" + deleteVehicleImage.names[i]))
+                {
+                    System.IO.File.Delete("../../Images/Vehicles/" + deleteVehicleImage.names[i]);
+
+                }
+            }
+            deleteVehicleImage.names.Clear();*/
         }
 
         private void radioButton1_Click(object sender, EventArgs e)

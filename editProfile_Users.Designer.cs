@@ -110,7 +110,7 @@ namespace CarRent
             this.guna2PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2PictureBox1.FillColor = System.Drawing.Color.WhiteSmoke;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(159, 56);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(170, 56);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
@@ -137,11 +137,12 @@ namespace CarRent
             this.guna2Button1.Size = new System.Drawing.Size(135, 37);
             this.guna2Button1.TabIndex = 3;
             this.guna2Button1.Text = "Save";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(170, 242);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(180, 20);
             this.textBox3.TabIndex = 5;
@@ -160,7 +161,7 @@ namespace CarRent
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(170, 276);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(180, 20);
             this.textBox4.TabIndex = 7;

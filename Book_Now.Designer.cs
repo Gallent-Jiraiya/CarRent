@@ -161,6 +161,7 @@ namespace CarRent
             this.btn_Rent.Size = new System.Drawing.Size(173, 37);
             this.btn_Rent.TabIndex = 2;
             this.btn_Rent.Text = "Release Vehicle Now";
+            this.btn_Rent.Click += new System.EventHandler(this.btn_Rent_Click);
             // 
             // btn_Reserve
             // 
@@ -181,6 +182,7 @@ namespace CarRent
             this.btn_Reserve.Size = new System.Drawing.Size(173, 37);
             this.btn_Reserve.TabIndex = 2;
             this.btn_Reserve.Text = "Reserve Vehicle";
+            this.btn_Reserve.Click += new System.EventHandler(this.btn_Reserve_Click);
             // 
             // label9
             // 
@@ -254,6 +256,9 @@ namespace CarRent
             this.cmb_Driver.Name = "cmb_Driver";
             this.cmb_Driver.Size = new System.Drawing.Size(227, 21);
             this.cmb_Driver.TabIndex = 9;
+            this.cmb_Driver.SelectedValueChanged += new System.EventHandler(this.cmb_Driver_SelectedValueChanged);
+            this.cmb_Driver.TextChanged += new System.EventHandler(this.cmb_Driver_TextChanged);
+            this.cmb_Driver.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cmb_Driver_KeyDown);
             // 
             // txt_StartMile
             // 

@@ -1,9 +1,11 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Printing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,10 +15,113 @@ namespace CarRent
 {
     public partial class Invoice : Form
     {
-        public string cusName, cusNIC, cusCNo, cusAdPay, vehicleID, startMileage, startDate, endDate;
+        private string _name;
+
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; lblName.Text = value; }
+        }
+        private String _nic;
+
+        public String NIC
+        {
+            get { return _nic; }
+            set { _nic = value; lblNIC.Text = value; }
+        }
+        private String _conNumber;
+
+        public String ConNum
+        {
+            get { return _conNumber; }
+            set { _conNumber = value; lblCNo.Text = value; }
+        }
+
+        private string _vehID;
+
+        public string VehID
+        {
+            get { return _vehID; }
+            set { _vehID = value; lblVehID.Text = value; }
+        }
+
+        private string _driver;
+
+        public string Driver
+        {
+            get { return _driver; }
+            set { _driver = value; lblDriver.Text = value; }
+        }
+
+        private String _startDate;
+
+        public String StartDate
+        {
+            get { return _startDate; }
+            set { _startDate = value; lblStartDate.Text = value; }
+        }
+
+        private string _endDate;
+
+        public string EndDate
+        {
+            get { return _endDate; }
+            set { _endDate = value; lblEndDate.Text = value; }
+        }
+
+        private string _cost;
+
+        public string Cost
+        {
+            get { return _cost; }
+            set { _cost = value;  lblTotal.Text = value+""; }
+        }
+
+        private string _advance;
+
+        public string Advance
+        {
+            get { return _advance; }
+            set { _advance = value; lblAdvance.Text = value + ""; }
+        }
+        private string _StartMileage;
+
+        public string StartMileage
+        {
+            get { return _StartMileage; }
+            set { _StartMileage = value; lblStartMileage.Text = value + ""; }
+        }
+
+
+
         public Invoice()
         {
             InitializeComponent();
+            invoiceID();
+        }
+        private void invoiceID()
+        {
+            try
+            {
+                String Query= "SELECT rentID FROM rent ORDER BY rentID DESC";
+
+                MySqlConnection con = new DbConnection().getDb;
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand(Query, con);
+                MySqlDataReader dr = cmd.ExecuteReader();
+                dr.Read();
+                lblInvoice.Text = (dr.GetInt32("rentID")+1) + "";
+
+                
+            }
+            catch (IOException ex)
+            {
+                // Extract some information from this exception, and then
+                // throw it to the parent method.
+                if (ex.Source != null)
+                    Console.WriteLine("IOException source: {0}", ex.Source);
+                throw;
+            }
         }
 
         private void Print(Panel pnl)
@@ -37,112 +142,51 @@ namespace CarRent
             pnl.DrawToBitmap(memoryimg, new Rectangle(0, 0, pnl.Width, pnl.Height));
         }
 
-        private void panelPrintInvoice_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblED_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSD_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Invoice_Load(object sender, EventArgs e)
         {
-            lblName.Text = cusName;
-            lblNIC.Text = cusNIC;
-            lblCNo.Text = cusCNo;
-            lblAPay.Text = cusAdPay;
-            lblVID.Text = vehicleID;
-            lblSM.Text = startMileage;
-            lblSD.Text = startDate;
-            lblED.Text = endDate;
-
-        }
-
-        private void lblSM_Click(object sender, EventArgs e)
-        {
+            
 
         }
 
         private void btn_confirm_Click(object sender, EventArgs e)
         {
             Print(this.panelPrintInvoice);
+            string Query;
+            if (lblStartMileage.Text == "")//reservation
+            {
+                Query= "insert into rent (CustName,customerNIC,vehicleRegNum,rentType,fromDate,toDate,driverNIC,totalCost,advancePayment,userName) " +
+                    "values('" + lblName.Text + "','" + lblNIC.Text + "','" +lblVehID.Text + "','Reserved','" + lblStartDate.Text + "','" + lblEndDate.Text + "','" + lblDriver.Text + "','" + int.Parse(lblTotal.Text) + "','" + int.Parse(lblAdvance.Text) + "','Admin');";
+                
+            }
+            else //rent
+            {
+                Query = "insert into rent (CustName,customerNIC,vehicleRegNum,rentType,fromDate,toDate,driverNIC,totalCost,advancePayment,startMilage,userName) " +
+                    "values('" + lblName.Text + "','" + lblNIC.Text + "','" + lblVehID.Text + "','OnRent','" + lblStartDate.Text + "','" + lblEndDate.Text + "','" + lblDriver.Text + "','" + int.Parse(lblTotal.Text) + "','" + int.Parse(lblAdvance.Text) + "','" + int.Parse(lblStartMileage.Text) + "','Admin');";
+
+            }
+            try
+            {
+                MySqlConnection con = new DbConnection().getDb;
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand(Query, con);
+                MySqlDataReader dr = cmd.ExecuteReader();
+                
+               
+                while (dr.Read())
+                {
+                    
+                 
+                }
+                con.Close();
+            }
+            catch (IOException ex)
+            {
+                // Extract some information from this exception, and then
+                // throw it to the parent method.
+                if (ex.Source != null)
+                    Console.WriteLine("IOException source: {0}", ex.Source);
+                throw;
+            }
         }
 
         private void panelPrintInvoice_Paint_1(object sender, PaintEventArgs e)
@@ -150,30 +194,11 @@ namespace CarRent
 
         }
 
-        private void lblVID_Click(object sender, EventArgs e)
+        private void label15_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lblAPay_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCNo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblNIC_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblName_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {

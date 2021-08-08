@@ -86,7 +86,7 @@ namespace CarRent
 
         private void btn_ReleaseVehicle_Click(object sender, EventArgs e)
         {
-            Invoice reserveInvoice = new Invoice();
+           /* Invoice reserveInvoice = new Invoice();
             reserveInvoice.cusName = txt_resName.Text;
             reserveInvoice.cusNIC = txt_resNIC.Text;
             reserveInvoice.cusCNo = txt_resCNo.Text;
@@ -95,7 +95,7 @@ namespace CarRent
             reserveInvoice.startMileage = txt_resSM.Text;
             reserveInvoice.startDate = dtp_start.Text;
             reserveInvoice.endDate = dtp_end.Text;
-            reserveInvoice.ShowDialog();
+            reserveInvoice.ShowDialog();*/
         }
     }
 }

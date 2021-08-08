@@ -18,21 +18,28 @@ namespace CarRent
         public US_Vehicles()
         {
             InitializeComponent();
+            loadVehicles("SELECT * FROM `vehicle`");
         }
 
         private void US_Vehicles_Load(object sender, EventArgs e)
         {
-            loadVehicles();
         }
-        private void loadVehicles()
+        public void loadVehicles(String Query)
         {
             try
             {
-                
+
                 MySqlConnection con = new DbConnection().getDb;
                 con.Open();
-                MySqlCommand cmd = new MySqlCommand("SELECT * FROM `vehicle`",con);
+                
+                MySqlCommand cmd = new MySqlCommand(Query,con);
                 MySqlDataReader dr = cmd.ExecuteReader();
+                if (flowLayoutPanel1.Controls.Count > 0)
+                {
+
+                    flowLayoutPanel1.Controls.Clear();
+                    
+                }
                 while (dr.Read())
                 {
 
@@ -59,6 +66,7 @@ namespace CarRent
                     }
                    
                 }
+               
             }
             catch (IOException e)
             {
@@ -91,7 +99,22 @@ namespace CarRent
             panel1.Controls.Add(pan);
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+       
+
+    
+
+        private void btn_Reset_Click(object sender, EventArgs e)
+        {
+            loadVehicles("SELECT * FROM `vehicle`");
+        }
+
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            string text = textBox1.Text;
+            loadVehicles("SELECT * FROM `vehicle` where regNum like '%"+text+ "%' OR brand like '%" + text + "%'");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -67,6 +67,7 @@
       <DependentUpon>Book_Now.cs</DependentUpon>
     </Compile>
     <Compile Include="DbConnection.cs" />
+    <Compile Include="deleteVehicleImage.cs" />
     <Compile Include="dbSetUser.cs" />
     <Compile Include="editDrivers_Users.cs">
       <SubType>Form</SubType>
@@ -99,6 +100,12 @@
     </Compile>
     <Compile Include="RemoveEmployee_Users.Designer.cs">
       <DependentUpon>RemoveEmployee_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchVehicle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchVehicle.Designer.cs">
+      <DependentUpon>SearchVehicle.cs</DependentUpon>
     </Compile>
     <Compile Include="US_Dashboard.cs">
       <SubType>UserControl</SubType>
@@ -167,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RemoveEmployee_Users.resx">
       <DependentUpon>RemoveEmployee_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchVehicle.resx">
+      <DependentUpon>SearchVehicle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="US_Dashboard.resx">
       <DependentUpon>US_Dashboard.cs</DependentUpon>

@@ -116,7 +116,6 @@ namespace CarRent
             this.label12.Size = new System.Drawing.Size(142, 20);
             this.label12.TabIndex = 28;
             this.label12.Text = "No. Of Passengers";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // panel3
             // 
@@ -221,7 +220,6 @@ namespace CarRent
             this.label9.Size = new System.Drawing.Size(90, 20);
             this.label9.TabIndex = 23;
             this.label9.Text = "Model Year";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label7
             // 
@@ -232,7 +230,6 @@ namespace CarRent
             this.label7.Size = new System.Drawing.Size(72, 20);
             this.label7.TabIndex = 19;
             this.label7.Text = "Luggage";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -243,7 +240,6 @@ namespace CarRent
             this.label6.Size = new System.Drawing.Size(96, 20);
             this.label6.TabIndex = 17;
             this.label6.Text = "Air Conditon";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -254,7 +250,6 @@ namespace CarRent
             this.label5.Size = new System.Drawing.Size(140, 20);
             this.label5.TabIndex = 15;
             this.label5.Text = "Transmission Type";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // FreeMileage
             // 
@@ -262,7 +257,6 @@ namespace CarRent
             this.FreeMileage.Name = "FreeMileage";
             this.FreeMileage.Size = new System.Drawing.Size(174, 20);
             this.FreeMileage.TabIndex = 14;
-            this.FreeMileage.TextChanged += new System.EventHandler(this.FreeMileage_TextChanged);
             // 
             // label4
             // 
@@ -273,7 +267,6 @@ namespace CarRent
             this.label4.Size = new System.Drawing.Size(101, 20);
             this.label4.TabIndex = 13;
             this.label4.Text = "Free Mileage";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox1
             // 
@@ -298,7 +291,7 @@ namespace CarRent
             this.btn_Delete.TabIndex = 11;
             this.btn_Delete.Text = "Delete";
             this.btn_Delete.UseVisualStyleBackColor = false;
-            this.btn_Delete.Click += new System.EventHandler(this.button4_Click);
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // btn_Edit
             // 
@@ -310,9 +303,9 @@ namespace CarRent
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.Size = new System.Drawing.Size(138, 30);
             this.btn_Edit.TabIndex = 11;
-            this.btn_Edit.Text = "Edit";
+            this.btn_Edit.Text = "Update";
             this.btn_Edit.UseVisualStyleBackColor = false;
-            this.btn_Edit.Click += new System.EventHandler(this.button3_Click);
+            this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
             // 
             // btn_Add
             // 
@@ -326,7 +319,7 @@ namespace CarRent
             this.btn_Add.TabIndex = 11;
             this.btn_Add.Text = "Add";
             this.btn_Add.UseVisualStyleBackColor = false;
-            this.btn_Add.Click += new System.EventHandler(this.button2_Click);
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // btn_Reset
             // 
@@ -340,7 +333,7 @@ namespace CarRent
             this.btn_Reset.TabIndex = 11;
             this.btn_Reset.Text = "Reset";
             this.btn_Reset.UseVisualStyleBackColor = false;
-            this.btn_Reset.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
             // 
             // label10
             // 
@@ -351,7 +344,6 @@ namespace CarRent
             this.label10.Size = new System.Drawing.Size(110, 20);
             this.label10.TabIndex = 8;
             this.label10.Text = "Vehicle Image";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // PricePerKM
             // 
@@ -369,7 +361,6 @@ namespace CarRent
             this.label11.Size = new System.Drawing.Size(140, 20);
             this.label11.TabIndex = 8;
             this.label11.Text = "Price Per Extra Km";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // RentingPrice
             // 
@@ -387,7 +378,6 @@ namespace CarRent
             this.label8.Size = new System.Drawing.Size(142, 20);
             this.label8.TabIndex = 8;
             this.label8.Text = "Renting Price (Rs.)";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // ModelVeh
             // 
@@ -412,7 +402,6 @@ namespace CarRent
             this.label3.Size = new System.Drawing.Size(52, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Model";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -423,7 +412,6 @@ namespace CarRent
             this.label2.Size = new System.Drawing.Size(127, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Vehicle Reg. No.";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // US_VehDet
             // 

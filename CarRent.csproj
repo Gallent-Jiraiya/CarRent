@@ -100,6 +100,12 @@
     <Compile Include="RemoveEmployee_Users.Designer.cs">
       <DependentUpon>RemoveEmployee_Users.cs</DependentUpon>
     </Compile>
+    <Compile Include="SearchVehicle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchVehicle.Designer.cs">
+      <DependentUpon>SearchVehicle.cs</DependentUpon>
+    </Compile>
     <Compile Include="US_Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RemoveEmployee_Users.resx">
       <DependentUpon>RemoveEmployee_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchVehicle.resx">
+      <DependentUpon>SearchVehicle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="US_Dashboard.resx">
       <DependentUpon>US_Dashboard.cs</DependentUpon>

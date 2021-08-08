@@ -7,15 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace CarRent
 {
     public partial class Form2 : Form
     {
-        public Form2()
-        {
-            InitializeComponent();
-        }
+
+        public Form2() => InitializeComponent();
+
+        MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=carrent");
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -35,6 +37,56 @@ namespace CarRent
         private void label8_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            string Password = "";
+            bool IsExist = false;
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand("select * from staff where userName='" + txt_user + "'", con);
+            MySqlDataReader sdr = cmd.ExecuteReader();
+            if (sdr.Read())
+            {
+                Password = sdr.GetString(2);  //get the user password from db if the user name is exist in that.  
+                IsExist = true;
+            }
+            con.Close();
+            if (IsExist)  //if record exis in db , it will return true, otherwise it will return false  
+            {
+                if (Cryptography.Decrypt(Password).Equals(txt_pass.Text))
+                {
+                    MessageBox.Show("Login Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Form1 frm1 = new Form1();
+                    frm1.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Password is wrong!...", "error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+            }
+            else  //showing the error message if user credential is wrong  
+            {
+                MessageBox.Show("Please enter the valid credentials", "error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+       
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_pass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            txt_user.Text = string.Empty;
+            txt_pass.Text = string.Empty;
         }
     }
 }

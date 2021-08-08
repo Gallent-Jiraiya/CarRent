@@ -12,18 +12,17 @@ namespace CarRent
 {
     public partial class Form1 : Form
     {
-        static Form1 _obj;
-        public static Form1 Instance
+         static Form1 _obj;
+
+        public static Form1 GetInstance()
         {
-            get
+            if (_obj == null)
             {
-                if(_obj == null)
-                {
-                    _obj = new Form1();
-                }
-                return _obj;
+                _obj = new Form1();
             }
+            return _obj;
         }
+
 
         public Panel PnlContainer
         {
@@ -146,6 +145,11 @@ namespace CarRent
         {
             
             panelContainer.Controls["US_Vehicles"].BringToFront();
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

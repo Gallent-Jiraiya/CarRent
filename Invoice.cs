@@ -154,14 +154,14 @@ namespace CarRent
             string Query;
             if (lblStartMileage.Text == "")//reservation
             {
-                Query= "insert into rent (CustName,customerNIC,vehicleRegNum,rentType,fromDate,toDate,driverNIC,totalCost,advancePayment,userName) " +
-                    "values('" + lblName.Text + "','" + lblNIC.Text + "','" +lblVehID.Text + "','Reserved','" + lblStartDate.Text + "','" + lblEndDate.Text + "','" + lblDriver.Text + "','" + int.Parse(lblTotal.Text) + "','" + int.Parse(lblAdvance.Text) + "','Admin');";
+                Query= "insert into rent (CustName,customerNIC,ConNum,vehicleRegNum,rentType,fromDate,toDate,driverNIC,totalCost,advancePayment,userName) " +
+                    "values('" + lblName.Text + "','" + lblNIC.Text + "','" + lblCNo.Text + "','" + lblVehID.Text + "','Reserved','" + lblStartDate.Text + "','" + lblEndDate.Text + "','" + lblDriver.Text + "','" + int.Parse(lblTotal.Text) + "','" + int.Parse(lblAdvance.Text) + "','Admin');";
                 
             }
             else //rent
             {
-                Query = "insert into rent (CustName,customerNIC,vehicleRegNum,rentType,fromDate,toDate,driverNIC,totalCost,advancePayment,startMilage,userName) " +
-                    "values('" + lblName.Text + "','" + lblNIC.Text + "','" + lblVehID.Text + "','OnRent','" + lblStartDate.Text + "','" + lblEndDate.Text + "','" + lblDriver.Text + "','" + int.Parse(lblTotal.Text) + "','" + int.Parse(lblAdvance.Text) + "','" + int.Parse(lblStartMileage.Text) + "','Admin');";
+                Query = "insert into rent (CustName,customerNIC,ConNum,vehicleRegNum,rentType,fromDate,toDate,driverNIC,totalCost,advancePayment,startMilage,userName) " +
+                    "values('" + lblName.Text + "','" + lblNIC.Text + "','" + lblCNo.Text + "','" + lblVehID.Text + "','OnRent','" + lblStartDate.Text + "','" + lblEndDate.Text + "','" + lblDriver.Text + "','" + int.Parse(lblTotal.Text) + "','" + int.Parse(lblAdvance.Text) + "','" + int.Parse(lblStartMileage.Text) + "','Admin');";
 
             }
             try
@@ -187,6 +187,7 @@ namespace CarRent
                     Console.WriteLine("IOException source: {0}", ex.Source);
                 throw;
             }
+            this.Dispose();
         }
 
         private void panelPrintInvoice_Paint_1(object sender, PaintEventArgs e)

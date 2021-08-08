@@ -40,6 +40,11 @@ namespace CarRent
             var editDriversForm = new editDrivers_Users();
             editDriversForm.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
 

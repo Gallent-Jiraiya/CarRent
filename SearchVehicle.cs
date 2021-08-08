@@ -10,25 +10,44 @@ using System.Windows.Forms;
 
 namespace CarRent
 {
-    public partial class ListVehicle : UserControl
+    public partial class SearchVehicle : UserControl
     {
-        public ListVehicle()
+        public SearchVehicle()
         {
             InitializeComponent();
+            
         }
         #region Properties
 
         private String _year;
         private String _picture;
-        private String _price;
+        private int _price;
         private String _mileage;
-        private String _perKm;
+        private int _perKm;
         private String _ac;
         private String _model;
         private String _passengers;
         private String _transmission;
         private String _luggage;
         private String _regNo;
+        private int _days;
+
+        private DateTime _startDay=DateTime.Now;
+
+        public DateTime StartDay
+        {
+            get { return _startDay; }
+            set { _startDay = value; }
+        }
+
+        private DateTime _endDay=DateTime.Now;
+
+        public DateTime EndDay
+        {
+            get { return _endDay; }
+            set { _endDay = value; }
+        }
+
 
         public String RegNo
         {
@@ -41,26 +60,36 @@ namespace CarRent
             get { return _year; }
             set { _year = value; Lbl_Year.Text = "Model Year: " + value; }
         }
-        
+
 
         [Category("Custom Props")]
         public String Picture
         {
             get { return _picture; }
-            set { _picture = value; PB_VehicleImage.Image = Image.FromFile("../../Images/Vehicles/"+value); }
+            set { _picture = value; PB_VehicleImage.Image = Image.FromFile(@"../../Images/Vehicles/" + value); }
+        }
+
+        public int Days
+        {
+            get { return _days; }
+            set { _days = value;
+                Lbl_Price.Text = "LKR " + (_price * _days);
+                Lbl_Cal.Text = "LKR " + _price + " X " + _days;
+            }
         }
 
 
-       
-
         [Category("Custom Props")]
-        public String Price
+        public int Price
         {
             get { return _price; }
-            set { _price = value; Lbl_Price.Text = "LKR " + value; }
+            set { _price = value; 
+                
+            }
         }
 
         
+
 
         [Category("Custom Props")]
         public String Mileage
@@ -69,16 +98,16 @@ namespace CarRent
             set { _mileage = value; Lbl_Milage.Text = "Free Mileage: " + value; }
         }
 
-        
+
 
         [Category("Custom Props")]
-        public String PerKm
+        public int PerKm
         {
             get { return _perKm; }
             set { _perKm = value; Lbl_PerKM.Text = value + " Per Extra Km"; }
         }
 
-        
+
 
         [Category("Custom Props")]
         public String AC
@@ -88,7 +117,7 @@ namespace CarRent
         }
 
 
-        
+
 
         [Category("Custom Props")]
         public String Model
@@ -96,7 +125,7 @@ namespace CarRent
             get { return _model; }
             set { _model = value; Lbl_BrandName.Text = value; }
         }
-        
+
 
         [Category("Custom Props")]
         public String Passengers
@@ -104,7 +133,7 @@ namespace CarRent
             get { return _passengers; }
             set { _passengers = value; Lbl_NoPassenger.Text = value + " Passenger"; }
         }
-        
+
 
         [Category("Custom Props")]
         public String Transmission
@@ -113,7 +142,7 @@ namespace CarRent
             set { _transmission = value; Lbl_Transmission.Text = value + "Transmission"; }
         }
 
-        
+
 
         [Category("Custom Props")]
         public String Luggage
@@ -124,29 +153,16 @@ namespace CarRent
 
         #endregion
 
-        private void Btn_Edit_Click(object sender, EventArgs e)
+        private void Btn_Book_Click(object sender, EventArgs e)
         {
-            US_VehDet item = new US_VehDet();
-            
-            item.Picture =_picture;
-            item.Year = _year;
-            item.AC = _ac;
-            item.Transmission = _transmission;
-            item.Price = _price;
-            item.Mileage = _mileage;
-            item.PerKm = _perKm;
-            item.Model = _model;
-            item.Luggage = _luggage;
-            item.Passengers = _passengers;
-            item.RegNo = _regNo;
-            
-            
-            US_Vehicles veh = new US_Vehicles();
-            veh.editPanel(item);
-            this.Parent.Parent.Controls.Add(veh);
-            this.Parent.Parent.Controls[5].Dispose();
-            
-
+            var bookNowForm = new Book_Now();
+            bookNowForm.Price = _price;
+            bookNowForm.RegNo = _regNo;
+            bookNowForm.Days = _days;
+            bookNowForm.StartDate = _startDay;
+            bookNowForm.EndDate = _endDay;
+            bookNowForm.DriverCombo();
+            bookNowForm.Show();
         }
     }
 }

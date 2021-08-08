@@ -38,8 +38,8 @@ namespace CarRent
                     flowLayoutPanel1.Controls.Clear();
 
                 }
-                String startdate = guna2DateTimePicker1.Value.Date.ToString("yyyyMMdd");
-                String endDate = guna2DateTimePicker2.Value.Date.ToString("yyyyMMdd");
+                DateTime startdate = guna2DateTimePicker1.Value;
+                DateTime endDate = guna2DateTimePicker2.Value;
                 while (dr.Read())
                 {
                     SearchVehicle item = new SearchVehicle();
@@ -91,9 +91,13 @@ namespace CarRent
             {
                 trans = "Manual";
             }
+            if (rad_Both.Checked)
+            {
+                trans = null;
+            }
             String startdate=guna2DateTimePicker1.Value.Date.ToString("yyyyMMdd");
             String endDate=guna2DateTimePicker2.Value.Date.ToString("yyyyMMdd");
-            string sql = "SELECT * FROM vehicle WHERE regNum NOT IN(SELECT vehicleRegNum FROM rent WHERE  '"+startdate+"'  BETWEEN fromDate AND toDate OR '"+endDate+"'  BETWEEN fromDate AND toDate)";
+            string sql = "SELECT * FROM vehicle WHERE (regNum NOT IN(SELECT vehicleRegNum FROM rent WHERE  '"+startdate+"'  BETWEEN fromDate AND toDate OR '"+endDate+ "'  BETWEEN fromDate AND toDate)) AND (transmissionType LIKE '%"+trans+ "%') AND (regNum like '%" + search + "%' OR brand like '%" + search + "%')";
             loadVehicles(sql, days);
 
         }
@@ -110,6 +114,8 @@ namespace CarRent
             else
             {
                 guna2DateTimePicker2.Enabled = true;
+                TimeSpan difference = guna2DateTimePicker2.Value.AddDays(1).Date - guna2DateTimePicker1.Value.Date;
+                txt_NoDays.Text = "" + (int)difference.TotalDays;
             }
         }
 

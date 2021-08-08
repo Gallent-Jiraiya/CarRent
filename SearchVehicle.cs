@@ -32,17 +32,17 @@ namespace CarRent
         private String _regNo;
         private int _days;
 
-        private string _startDays;
+        private DateTime _startDay=DateTime.Now;
 
-        public string StartDay
+        public DateTime StartDay
         {
-            get { return _startDays; }
-            set { _startDays = value; }
+            get { return _startDay; }
+            set { _startDay = value; }
         }
 
-        private string _endDay;
+        private DateTime _endDay=DateTime.Now;
 
-        public string EndDay
+        public DateTime EndDay
         {
             get { return _endDay; }
             set { _endDay = value; }
@@ -156,6 +156,12 @@ namespace CarRent
         private void Btn_Book_Click(object sender, EventArgs e)
         {
             var bookNowForm = new Book_Now();
+            bookNowForm.Price = _price;
+            bookNowForm.RegNo = _regNo;
+            bookNowForm.Days = _days;
+            bookNowForm.StartDate = _startDay;
+            bookNowForm.EndDate = _endDay;
+            bookNowForm.DriverCombo();
             bookNowForm.Show();
         }
     }

@@ -47,7 +47,7 @@ namespace CarRent
         public String Picture
         {
             get { return _picture; }
-            set { _picture = value; PB_VehicleImage.Image = Image.FromFile(@"../../Images/Vehicles/"+value); }
+            set { _picture = value; PB_VehicleImage.Image = Image.FromFile("../../Images/Vehicles/"+value); }
         }
 
 

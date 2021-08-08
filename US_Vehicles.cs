@@ -83,5 +83,10 @@ namespace CarRent
             US_VehDet pan = new US_VehDet();
             panel1.Controls.Add(pan);
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

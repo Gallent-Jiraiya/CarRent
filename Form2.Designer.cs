@@ -33,10 +33,8 @@
             this.txt_pass = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btn_login = new Guna.UI2.WinForms.Guna2Button();
             this.btn_reset = new Guna.UI2.WinForms.Guna2Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -81,14 +79,14 @@
             this.txt_user.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_user.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_user.HoverState.Parent = this.txt_user;
-            this.txt_user.Location = new System.Drawing.Point(408, 158);
+            this.txt_user.Location = new System.Drawing.Point(408, 123);
             this.txt_user.Name = "txt_user";
             this.txt_user.PasswordChar = '\0';
             this.txt_user.PlaceholderText = "";
             this.txt_user.SelectedText = "";
             this.txt_user.ShadowDecoration.Parent = this.txt_user;
             this.txt_user.Size = new System.Drawing.Size(148, 25);
-            this.txt_user.TabIndex = 2;
+            this.txt_user.TabIndex = 0;
             this.txt_user.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // txt_pass
@@ -105,14 +103,14 @@
             this.txt_pass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_pass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_pass.HoverState.Parent = this.txt_pass;
-            this.txt_pass.Location = new System.Drawing.Point(408, 202);
+            this.txt_pass.Location = new System.Drawing.Point(408, 167);
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.PasswordChar = '*';
             this.txt_pass.PlaceholderText = "";
             this.txt_pass.SelectedText = "";
             this.txt_pass.ShadowDecoration.Parent = this.txt_pass;
             this.txt_pass.Size = new System.Drawing.Size(148, 25);
-            this.txt_pass.TabIndex = 3;
+            this.txt_pass.TabIndex = 1;
             this.txt_pass.TextChanged += new System.EventHandler(this.txt_pass_TextChanged);
             // 
             // label1
@@ -120,10 +118,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(309, 163);
+            this.label1.Location = new System.Drawing.Point(309, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 18);
-            this.label1.TabIndex = 4;
+            this.label1.TabIndex = 5;
             this.label1.Text = "USER NAME";
             // 
             // label2
@@ -131,35 +129,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(309, 206);
+            this.label2.Location = new System.Drawing.Point(309, 171);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 18);
-            this.label2.TabIndex = 5;
+            this.label2.TabIndex = 6;
             this.label2.Text = "PASSWORD";
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.AutoRoundedCorners = true;
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 17;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "ADMIN",
-            "STAFF"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(408, 109);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(148, 36);
-            this.guna2ComboBox1.TabIndex = 6;
             // 
             // btn_login
             // 
@@ -174,12 +148,12 @@
             this.btn_login.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.Color.White;
             this.btn_login.HoverState.Parent = this.btn_login;
-            this.btn_login.Location = new System.Drawing.Point(408, 258);
+            this.btn_login.Location = new System.Drawing.Point(421, 258);
             this.btn_login.Name = "btn_login";
             this.btn_login.ShadowDecoration.Parent = this.btn_login;
             this.btn_login.Size = new System.Drawing.Size(148, 29);
-            this.btn_login.TabIndex = 7;
-            this.btn_login.Text = "LOGIN";
+            this.btn_login.TabIndex = 3;
+            this.btn_login.Text = "&LOGIN";
             this.btn_login.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // btn_reset
@@ -195,24 +169,13 @@
             this.btn_reset.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_reset.ForeColor = System.Drawing.Color.DarkRed;
             this.btn_reset.HoverState.Parent = this.btn_reset;
-            this.btn_reset.Location = new System.Drawing.Point(408, 293);
+            this.btn_reset.Location = new System.Drawing.Point(261, 258);
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.ShadowDecoration.Parent = this.btn_reset;
             this.btn_reset.Size = new System.Drawing.Size(148, 29);
-            this.btn_reset.TabIndex = 8;
-            this.btn_reset.Text = "RESET";
+            this.btn_reset.TabIndex = 2;
+            this.btn_reset.Text = "&RESET";
             this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(311, 118);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 18);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "SELECT ROLE";
             // 
             // label4
             // 
@@ -297,10 +260,8 @@
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.btn_login);
-            this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_pass);
@@ -308,6 +269,7 @@
             this.Controls.Add(this.guna2CircleButton2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
@@ -323,10 +285,8 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_pass;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2Button btn_login;
         private Guna.UI2.WinForms.Guna2Button btn_reset;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;

@@ -14,6 +14,8 @@ namespace CarRent
 {
     public partial class Form2 : Form
     {
+        MySqlCommand command;
+        HashCode hc = new HashCode();
 
         public Form2() => InitializeComponent();
 
@@ -41,35 +43,82 @@ namespace CarRent
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string Password = "";
-            bool IsExist = false;
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand("select * from staff where userName='" + txt_user + "'", con);
-            MySqlDataReader sdr = cmd.ExecuteReader();
-            if (sdr.Read())
+           // con.Open();
+            String username = txt_user.Text;
+            String password = hc.passHash(txt_pass.Text);
+
+            String queary = $" Select * FROM staff where userName='{username}' ";
+            try
             {
-                Password = sdr.GetString(2);  //get the user password from db if the user name is exist in that.  
-                IsExist = true;
-            }
-            con.Close();
-            if (IsExist)  //if record exis in db , it will return true, otherwise it will return false  
-            {
-                if (Cryptography.Decrypt(Password).Equals(txt_pass.Text))
+                con.Open();
+                command = new MySqlCommand(queary, con);
+                MySqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
                 {
-                    MessageBox.Show("Login Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Form1 frm1 = new Form1();
-                    frm1.ShowDialog();
+                    String Password = reader.GetString(7);
+
+                    if (password.Equals(Password))
+                    {
+
+                        MessageBox.Show("Login Sucsses");
+                        Form1 frm1 = new Form1();
+                        frm1.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Password is incorrect");
+                    }
+
                 }
                 else
                 {
-                    MessageBox.Show("Password is wrong!...", "error", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                    MessageBox.Show("Please enter the valid credentials");
 
+                }
+                con.Close();
             }
-            else  //showing the error message if user credential is wrong  
+
+            catch (Exception ex)
             {
-                MessageBox.Show("Please enter the valid credentials", "error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(ex.Message);
             }
+
+
+
+
+            /*  string Password = "";
+              bool IsExist = false;
+              string UserName = txt_user.Text;
+
+              con.Open();
+              MySqlCommand cmd = new MySqlCommand($"select * from staff where userName='{UserName}'", con);
+              MySqlDataReader sdr = cmd.ExecuteReader();
+              if (sdr.Read())
+              {
+                  Password = sdr.GetString(7);  //get the user password from db if the user name is exist in that.  
+                  IsExist = true;
+              }
+              con.Close();
+              if (IsExist)  //if record exis in db , it will return true, otherwise it will return false  
+              {
+                  if (Cryptography.Decrypt(Password).Equals(txt_pass.Text))
+                  {
+                      MessageBox.Show("Login Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                      Form1 frm1 = new Form1();
+                      frm1.ShowDialog();
+                  }
+                  else
+                  {
+                      MessageBox.Show("Password is wrong!...", "error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                  }
+
+              }
+              else  //showing the error message if user credential is wrong  
+              {
+                  MessageBox.Show("Please enter the valid credentials", "error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+              } */
+
         }
 
        
@@ -87,6 +136,11 @@ namespace CarRent
         {
             txt_user.Text = string.Empty;
             txt_pass.Text = string.Empty;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

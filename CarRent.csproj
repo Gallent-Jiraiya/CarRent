@@ -79,11 +79,23 @@
     <Compile Include="editProfile_Users.Designer.cs">
       <DependentUpon>editProfile_Users.cs</DependentUpon>
     </Compile>
+    <Compile Include="EndRentInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EndRentInvoice.Designer.cs">
+      <DependentUpon>EndRentInvoice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
     </Compile>
     <Compile Include="ListVehicle.cs">
       <SubType>UserControl</SubType>
@@ -153,8 +165,14 @@
     <EmbeddedResource Include="editProfile_Users.resx">
       <DependentUpon>editProfile_Users.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EndRentInvoice.resx">
+      <DependentUpon>EndRentInvoice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListVehicle.resx">
       <DependentUpon>ListVehicle.cs</DependentUpon>

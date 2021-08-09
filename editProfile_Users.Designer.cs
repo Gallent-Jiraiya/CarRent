@@ -69,8 +69,8 @@ namespace CarRent
             this.txt_UserName.Location = new System.Drawing.Point(170, 173);
             this.txt_UserName.Margin = new System.Windows.Forms.Padding(2);
             this.txt_UserName.Name = "txt_UserName";
-            this.txt_UserName.Size = new System.Drawing.Size(180, 20);
-            this.txt_UserName.TabIndex = 1;
+            this.txt_UserName.Size = new System.Drawing.Size(180, 22);
+            this.txt_UserName.TabIndex = 0;
             // 
             // label3
             // 
@@ -87,7 +87,7 @@ namespace CarRent
             this.Txt_NewPass.Location = new System.Drawing.Point(170, 204);
             this.Txt_NewPass.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_NewPass.Name = "Txt_NewPass";
-            this.Txt_NewPass.Size = new System.Drawing.Size(180, 20);
+            this.Txt_NewPass.Size = new System.Drawing.Size(180, 22);
             this.Txt_NewPass.TabIndex = 1;
             // 
             // label4
@@ -126,8 +126,8 @@ namespace CarRent
             this.txt_ReNewPass.Location = new System.Drawing.Point(170, 242);
             this.txt_ReNewPass.Margin = new System.Windows.Forms.Padding(2);
             this.txt_ReNewPass.Name = "txt_ReNewPass";
-            this.txt_ReNewPass.Size = new System.Drawing.Size(180, 20);
-            this.txt_ReNewPass.TabIndex = 5;
+            this.txt_ReNewPass.Size = new System.Drawing.Size(180, 22);
+            this.txt_ReNewPass.TabIndex = 2;
             // 
             // label5
             // 
@@ -144,8 +144,8 @@ namespace CarRent
             this.txt_OldPass.Location = new System.Drawing.Point(170, 276);
             this.txt_OldPass.Margin = new System.Windows.Forms.Padding(2);
             this.txt_OldPass.Name = "txt_OldPass";
-            this.txt_OldPass.Size = new System.Drawing.Size(180, 20);
-            this.txt_OldPass.TabIndex = 7;
+            this.txt_OldPass.Size = new System.Drawing.Size(180, 22);
+            this.txt_OldPass.TabIndex = 3;
             // 
             // label6
             // 

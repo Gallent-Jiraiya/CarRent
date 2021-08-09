@@ -56,7 +56,7 @@ namespace CarRent
 
                 if (reader.Read())
                 {
-                    String Password = reader.GetString(7);
+                    String Password = reader.GetString("password");
 
                     if (password.Equals(Password))
                     {

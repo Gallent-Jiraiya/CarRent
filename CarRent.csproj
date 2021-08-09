@@ -120,6 +120,9 @@
     <Compile Include="RemoveEmployee_Users.Designer.cs">
       <DependentUpon>RemoveEmployee_Users.cs</DependentUpon>
     </Compile>
+    <Compile Include="RoundPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="SearchVehicle.cs">
       <SubType>UserControl</SubType>
     </Compile>

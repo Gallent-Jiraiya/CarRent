@@ -34,6 +34,7 @@ namespace CarRent
                 { 
                     lbl_UserName.Text= dr.GetString("fName");
                     lbl_User.Text= dr.GetString("userName");
+                    roundPictureBox1.Image = new Bitmap("../../Images/Users/" + dr.GetString("picture"));
                 }
             }
             catch (IOException e)

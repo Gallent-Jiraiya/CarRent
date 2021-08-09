@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -43,6 +44,17 @@ namespace CarRent
         {
             InitializeComponent();
             userData();
+            
+            /*Bitmap copy = new Bitmap("../../Images/Vehicles/TOYOTA  Premio2008KG-6075.png");
+            using (Graphics g = Graphics.FromImage(copy))
+            {
+                RectangleF r = new RectangleF(center.X - radius, center.Y - radius, radius * 2, radius * 2);
+                GraphicsPath path = new GraphicsPath();
+                path.AddEllipse(r);
+                g.Clip = new Region(path);
+                g.DrawImage(original, 0, 0);
+                return copy;
+            }*/
         }
         private void userData()
         {
@@ -58,7 +70,8 @@ namespace CarRent
                 while (dr.Read())
                 {
                     lbl_UserName.Text = dr.GetString("fName");
-                    
+                    roundPictureBox1.Image = new Bitmap("../../Images/Users/"+dr.GetString("picture"));
+
                 }
             }
             catch (IOException e)

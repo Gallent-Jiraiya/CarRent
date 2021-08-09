@@ -1,8 +1,10 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +17,34 @@ namespace CarRent
         public US_Users()
         {
             InitializeComponent();
+            userData();
+        }
+        private void userData()
+        {
+            try
+            {
+                Ureference usr = new Ureference();
+                MySqlConnection con = new DbConnection().getDb;
+                con.Open();
+                String Query = "SELECT * from staff WHERE userName='"+usr.User+"'";
+                MySqlCommand cmd = new MySqlCommand(Query, con);
+                MySqlDataReader dr = cmd.ExecuteReader();
+                
+                while (dr.Read()) 
+                { 
+                    lbl_UserName.Text= dr.GetString("fName");
+                    lbl_User.Text= dr.GetString("userName");
+                    roundPictureBox1.Image = new Bitmap("../../Images/Users/" + dr.GetString("picture"));
+                }
+            }
+            catch (IOException e)
+            {
+                // Extract some information from this exception, and then
+                // throw it to the parent method.
+                if (e.Source != null)
+                    Console.WriteLine("IOException source: {0}", e.Source);
+                throw;
+            }
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)

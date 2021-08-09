@@ -213,6 +213,7 @@ namespace CarRent
             this.rad_Auto.Text = "Auto";
             this.rad_Auto.UseVisualStyleBackColor = false;
             // 
+            
             // guna2Button1
             // 
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;

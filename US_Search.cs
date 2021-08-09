@@ -133,6 +133,11 @@ namespace CarRent
                 txt_NoDays.Text = "" + (int)difference.TotalDays;
             }
         }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
     
 

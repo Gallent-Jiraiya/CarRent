@@ -29,14 +29,14 @@ namespace CarRent
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_dRemove = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_dUpdate = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_dAdd = new Guna.UI2.WinForms.Guna2Button();
             this.txtD_CNo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtD_Age = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtD_License = new Guna.UI2.WinForms.Guna2TextBox();
@@ -61,15 +61,15 @@ namespace CarRent
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(337, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 26);
+            this.label1.Size = new System.Drawing.Size(242, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Edit Driver Details";
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.guna2Button3);
-            this.guna2Panel1.Controls.Add(this.guna2Button2);
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
+            this.guna2Panel1.Controls.Add(this.btn_dRemove);
+            this.guna2Panel1.Controls.Add(this.btn_dUpdate);
+            this.guna2Panel1.Controls.Add(this.btn_dAdd);
             this.guna2Panel1.Controls.Add(this.txtD_CNo);
             this.guna2Panel1.Controls.Add(this.txtD_Age);
             this.guna2Panel1.Controls.Add(this.txtD_License);
@@ -88,62 +88,65 @@ namespace CarRent
             this.guna2Panel1.Size = new System.Drawing.Size(405, 500);
             this.guna2Panel1.TabIndex = 2;
             // 
-            // guna2Button3
+            // btn_dRemove
             // 
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.DisabledState.Parent = this.guna2Button3;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(267, 399);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(92, 34);
-            this.guna2Button3.TabIndex = 6;
-            this.guna2Button3.Text = "Remove";
+            this.btn_dRemove.CheckedState.Parent = this.btn_dRemove;
+            this.btn_dRemove.CustomImages.Parent = this.btn_dRemove;
+            this.btn_dRemove.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_dRemove.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_dRemove.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_dRemove.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_dRemove.DisabledState.Parent = this.btn_dRemove;
+            this.btn_dRemove.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_dRemove.ForeColor = System.Drawing.Color.White;
+            this.btn_dRemove.HoverState.Parent = this.btn_dRemove;
+            this.btn_dRemove.Location = new System.Drawing.Point(267, 399);
+            this.btn_dRemove.Name = "btn_dRemove";
+            this.btn_dRemove.ShadowDecoration.Parent = this.btn_dRemove;
+            this.btn_dRemove.Size = new System.Drawing.Size(92, 34);
+            this.btn_dRemove.TabIndex = 6;
+            this.btn_dRemove.Text = "Remove";
+            this.btn_dRemove.Click += new System.EventHandler(this.btn_dRemove_Click);
             // 
-            // guna2Button2
+            // btn_dUpdate
             // 
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.DisabledState.Parent = this.guna2Button2;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(145, 399);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(63, 34);
-            this.guna2Button2.TabIndex = 6;
-            this.guna2Button2.Text = "Save";
+            this.btn_dUpdate.CheckedState.Parent = this.btn_dUpdate;
+            this.btn_dUpdate.CustomImages.Parent = this.btn_dUpdate;
+            this.btn_dUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_dUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_dUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_dUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_dUpdate.DisabledState.Parent = this.btn_dUpdate;
+            this.btn_dUpdate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_dUpdate.ForeColor = System.Drawing.Color.White;
+            this.btn_dUpdate.HoverState.Parent = this.btn_dUpdate;
+            this.btn_dUpdate.Location = new System.Drawing.Point(137, 399);
+            this.btn_dUpdate.Name = "btn_dUpdate";
+            this.btn_dUpdate.ShadowDecoration.Parent = this.btn_dUpdate;
+            this.btn_dUpdate.Size = new System.Drawing.Size(87, 34);
+            this.btn_dUpdate.TabIndex = 6;
+            this.btn_dUpdate.Text = "Update";
+            this.btn_dUpdate.Click += new System.EventHandler(this.btn_dUpdate_Click);
             // 
-            // guna2Button1
+            // btn_dAdd
             // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(19, 399);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(67, 34);
-            this.guna2Button1.TabIndex = 6;
-            this.guna2Button1.Text = "Add";
+            this.btn_dAdd.CheckedState.Parent = this.btn_dAdd;
+            this.btn_dAdd.CustomImages.Parent = this.btn_dAdd;
+            this.btn_dAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_dAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_dAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_dAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_dAdd.DisabledState.Parent = this.btn_dAdd;
+            this.btn_dAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_dAdd.ForeColor = System.Drawing.Color.White;
+            this.btn_dAdd.HoverState.Parent = this.btn_dAdd;
+            this.btn_dAdd.Location = new System.Drawing.Point(19, 399);
+            this.btn_dAdd.Name = "btn_dAdd";
+            this.btn_dAdd.ShadowDecoration.Parent = this.btn_dAdd;
+            this.btn_dAdd.Size = new System.Drawing.Size(67, 34);
+            this.btn_dAdd.TabIndex = 6;
+            this.btn_dAdd.Text = "Add";
+            this.btn_dAdd.Click += new System.EventHandler(this.btn_dAdd_Click);
             // 
             // txtD_CNo
             // 
@@ -351,30 +354,30 @@ namespace CarRent
             // 
             // DataGridViewDriver
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DataGridViewDriver.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.DataGridViewDriver.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.DataGridViewDriver.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridViewDriver.BackgroundColor = System.Drawing.Color.White;
             this.DataGridViewDriver.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridViewDriver.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridViewDriver.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridViewDriver.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridViewDriver.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.DataGridViewDriver.ColumnHeadersHeight = 27;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewDriver.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewDriver.DefaultCellStyle = dataGridViewCellStyle9;
             this.DataGridViewDriver.EnableHeadersVisualStyles = false;
             this.DataGridViewDriver.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridViewDriver.Location = new System.Drawing.Point(447, 79);
@@ -443,9 +446,9 @@ namespace CarRent
         private Guna.UI2.WinForms.Guna2TextBox txtD_License;
         private Guna.UI2.WinForms.Guna2TextBox txtD_NIC;
         private Guna.UI2.WinForms.Guna2TextBox txtD_name;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btn_dRemove;
+        private Guna.UI2.WinForms.Guna2Button btn_dUpdate;
+        private Guna.UI2.WinForms.Guna2Button btn_dAdd;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridViewDriver;
     }
 }

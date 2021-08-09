@@ -30,7 +30,7 @@ namespace CarRent
             {
                 MessageBox.Show("Please enter the first name", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (guna2TextBox2.Text == "")
+            else if (guna2TextBox3.Text == "")
             {
                 MessageBox.Show("Please enter the last name", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

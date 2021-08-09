@@ -18,7 +18,15 @@ namespace CarRent
         {
             InitializeComponent();
             userData();
+            if (UserType == "Staff")
+            {
+                guna2Button2.Enabled = false;
+                guna2Button2.Hide();
+                guna2Button3.Enabled = false;
+                guna2Button3.Hide();
+            }
         }
+        String UserType;
         private void userData()
         {
             try
@@ -34,6 +42,7 @@ namespace CarRent
                 { 
                     lbl_UserName.Text= dr.GetString("fName");
                     lbl_User.Text= dr.GetString("userName");
+                    UserType = dr.GetString("type");
                     roundPictureBox1.Image = new Bitmap("../../Images/Users/" + dr.GetString("picture"));
                 }
             }

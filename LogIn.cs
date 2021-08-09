@@ -12,12 +12,12 @@ using MySql.Data.MySqlClient;
 
 namespace CarRent
 {
-    public partial class Form2 : Form
+    public partial class LogIn : Form
     {
         MySqlCommand command;
         HashCode hc = new HashCode();
 
-        public Form2() => InitializeComponent();
+        public LogIn() => InitializeComponent();
 
         MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=carrent");
 
@@ -67,7 +67,7 @@ namespace CarRent
                             User = txt_user.Text
                         };
                         con.Close();
-                        Form1 frm1 = new Form1();
+                        Main frm1 = new Main();
                         frm1.Show();
                         this.Hide();
                     }

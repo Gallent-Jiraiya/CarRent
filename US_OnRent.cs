@@ -48,10 +48,6 @@ namespace CarRent
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void US_OnRent_Load(object sender, EventArgs e)
         {
@@ -114,11 +110,6 @@ namespace CarRent
             {
                 MessageBox.Show("Enter Final Payment Amount", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void dataGridViewOnRent_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void btn_Calc_Click(object sender, EventArgs e)
@@ -188,9 +179,6 @@ namespace CarRent
             }
         }
 
-        private void dataGridViewOnRent_MouseEnter(object sender, EventArgs e)
-        {
-            LoadTable();
-        }
+      
     }
 }

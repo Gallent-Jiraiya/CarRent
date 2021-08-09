@@ -13,15 +13,15 @@ using System.Windows.Forms;
 
 namespace CarRent
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
-         static Form1 _obj;
+         static Main _obj;
 
-        public static Form1 GetInstance()
+        public static Main GetInstance()
         {
             if (_obj == null)
             {
-                _obj = new Form1();
+                _obj = new Main();
             }
             return _obj;
         }
@@ -40,7 +40,7 @@ namespace CarRent
         }
 
 
-        public Form1()
+        public Main()
         {
             InitializeComponent();
             userData();
@@ -132,8 +132,12 @@ namespace CarRent
 
         private void radioButton1_Click(object sender, EventArgs e)
         {
-            panelContainer.Controls["US_Dashboard"].Refresh();
-            panelContainer.Controls["US_Dashboard"].BringToFront();
+            US_Dashboard ucDash = new US_Dashboard();
+            ucDash.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucDash);
+            panelContainer.Controls["US_Dashboard"].Dispose();
+            panelContainer.Controls[panelContainer.Controls.Count-1].BringToFront();
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -164,22 +168,34 @@ namespace CarRent
         private void searchButton_Click(object sender, EventArgs e)
         {
             
-            panelContainer.Controls["US_Search"].BringToFront();
-            panelContainer.Controls["US_Search"].Refresh();
+          
+            US_Search ucDash = new US_Search();
+            ucDash.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucDash);
+            panelContainer.Controls["US_Search"].Dispose();
+            panelContainer.Controls[panelContainer.Controls.Count-1].BringToFront();
         }
 
         private void onrentButton_Click(object sender, EventArgs e)
         {
             
-            panelContainer.Controls["US_OnRent"].BringToFront();
-            panelContainer.Controls["US_OnRent"].Refresh();
+           
+            US_OnRent ucDash = new US_OnRent();
+            ucDash.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucDash);
+            panelContainer.Controls["US_OnRent"].Dispose();
+            panelContainer.Controls[panelContainer.Controls.Count - 1].BringToFront();
         }
 
         private void reservedButton_Click(object sender, EventArgs e)
         {
             
-            panelContainer.Controls["US_Reserved"].BringToFront();
-            panelContainer.Controls["US_Reserved"].Refresh();
+         
+            US_Reserved ucDash = new US_Reserved();
+            ucDash.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucDash);
+            panelContainer.Controls["US_Reserved"].Dispose();
+            panelContainer.Controls[panelContainer.Controls.Count - 1].BringToFront();
         }
 
         private void usersButton_CheckedChanged(object sender, EventArgs e)
@@ -190,8 +206,11 @@ namespace CarRent
         private void usersButton_Click(object sender, EventArgs e)
         {
             
-            panelContainer.Controls["US_Users"].BringToFront();
-            panelContainer.Controls["US_Users"].Refresh();
+            US_Users ucDash = new US_Users();
+            ucDash.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucDash);
+            panelContainer.Controls["US_Users"].Dispose();
+            panelContainer.Controls[panelContainer.Controls.Count - 1].BringToFront();
         }
 
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)
@@ -202,8 +221,12 @@ namespace CarRent
         private void vehiclesButton_Click(object sender, EventArgs e)
         {
             
-            panelContainer.Controls["US_Vehicles"].BringToFront();
-            panelContainer.Controls["US_Vehicles"].Refresh();
+       
+            US_Vehicles ucDash = new US_Vehicles();
+            ucDash.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucDash);
+            panelContainer.Controls["US_Vehicles"].Dispose();
+            panelContainer.Controls[panelContainer.Controls.Count - 1].BringToFront();
         }
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)
@@ -213,7 +236,7 @@ namespace CarRent
 
         private void btn_Logout_Click(object sender, EventArgs e)
         {
-            Form2 login = new Form2();
+            LogIn login = new LogIn();
             login.Show();
 
             this.Close();

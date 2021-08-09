@@ -17,7 +17,10 @@ namespace CarRent
         public US_Search()
         {
             InitializeComponent();
-            loadVehicles("SELECT * FROM `vehicle`",1);
+            
+            guna2DateTimePicker1.Value = DateTime.Now.Date;
+            guna2DateTimePicker2.Value = DateTime.Now.Date;
+            loadVehicles("SELECT * FROM `vehicle`", 1);
             TimeSpan difference = guna2DateTimePicker2.Value.AddDays(1).Date - guna2DateTimePicker1.Value.Date;
 
             txt_NoDays.Text = "" + (int)difference.TotalDays;

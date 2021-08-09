@@ -71,10 +71,7 @@ namespace CarRent
             }
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         private void btn_ReleaseVehicle_Click(object sender, EventArgs e)
         {
@@ -127,14 +124,8 @@ namespace CarRent
             }
         }
 
-        private void dataGridView1_MouseEnter(object sender, EventArgs e)
-        {
-            loadTable();
-        }
+        
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
     }
 }

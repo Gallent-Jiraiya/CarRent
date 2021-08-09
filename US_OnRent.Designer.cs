@@ -29,8 +29,6 @@ namespace CarRent
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewOnRent = new System.Windows.Forms.DataGridView();
             this.btn_EndRent = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,32 +62,13 @@ namespace CarRent
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOnRent)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(549, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 31);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(460, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Search";
-            // 
             // dataGridViewOnRent
             // 
             this.dataGridViewOnRent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewOnRent.Location = new System.Drawing.Point(380, 90);
+            this.dataGridViewOnRent.Location = new System.Drawing.Point(380, 51);
             this.dataGridViewOnRent.Name = "dataGridViewOnRent";
             this.dataGridViewOnRent.RowHeadersWidth = 51;
-            this.dataGridViewOnRent.Size = new System.Drawing.Size(391, 417);
+            this.dataGridViewOnRent.Size = new System.Drawing.Size(391, 456);
             this.dataGridViewOnRent.TabIndex = 2;
             this.dataGridViewOnRent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewOnRent_CellClick);
             this.dataGridViewOnRent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewOnRent_CellContentClick);
@@ -452,8 +431,6 @@ namespace CarRent
             this.Controls.Add(this.btn_EndRent);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridViewOnRent);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
             this.Name = "US_OnRent";
             this.Size = new System.Drawing.Size(774, 540);
             this.Load += new System.EventHandler(this.US_OnRent_Load);
@@ -464,9 +441,6 @@ namespace CarRent
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridViewOnRent;
         private Guna.UI2.WinForms.Guna2Button btn_EndRent;
         private System.Windows.Forms.Label label2;

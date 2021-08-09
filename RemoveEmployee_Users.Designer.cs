@@ -41,7 +41,7 @@
             this.label2.Location = new System.Drawing.Point(91, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(230, 29);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 3;
             this.label2.Text = "Remove Employees";
             // 
             // txt_EmpNIC
@@ -50,7 +50,7 @@
             this.txt_EmpNIC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_EmpNIC.Name = "txt_EmpNIC";
             this.txt_EmpNIC.Size = new System.Drawing.Size(147, 22);
-            this.txt_EmpNIC.TabIndex = 3;
+            this.txt_EmpNIC.TabIndex = 0;
             // 
             // label1
             // 
@@ -79,7 +79,7 @@
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(180, 46);
-            this.guna2Button1.TabIndex = 4;
+            this.guna2Button1.TabIndex = 1;
             this.guna2Button1.Text = "Remove";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 

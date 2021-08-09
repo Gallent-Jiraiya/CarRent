@@ -108,7 +108,7 @@ namespace CarRent
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(270, 116);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(86, 24);
+            this.label12.Size = new System.Drawing.Size(110, 29);
             this.label12.TabIndex = 66;
             this.label12.Text = "INVOICE";
             // 
@@ -133,7 +133,7 @@ namespace CarRent
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(505, 57);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 13);
+            this.label3.Size = new System.Drawing.Size(92, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "037 2247423";
             // 
@@ -144,7 +144,7 @@ namespace CarRent
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(505, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.Size = new System.Drawing.Size(85, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Kurunegala.";
             // 
@@ -155,7 +155,7 @@ namespace CarRent
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(505, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 13);
+            this.label1.Size = new System.Drawing.Size(143, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "No. 52, Puttalam Rd, ";
             // 
@@ -250,7 +250,7 @@ namespace CarRent
             this.label8.Location = new System.Drawing.Point(120, 562);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 18);
+            this.label8.Size = new System.Drawing.Size(78, 24);
             this.label8.TabIndex = 108;
             this.label8.Text = "Balance";
             // 
@@ -260,7 +260,7 @@ namespace CarRent
             this.lbl_Bal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Bal.Location = new System.Drawing.Point(342, 562);
             this.lbl_Bal.Name = "lbl_Bal";
-            this.lbl_Bal.Size = new System.Drawing.Size(16, 18);
+            this.lbl_Bal.Size = new System.Drawing.Size(20, 24);
             this.lbl_Bal.TabIndex = 107;
             this.lbl_Bal.Text = "?";
             // 
@@ -279,7 +279,7 @@ namespace CarRent
             this.label6.Location = new System.Drawing.Point(120, 533);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 18);
+            this.label6.Size = new System.Drawing.Size(129, 24);
             this.label6.TabIndex = 105;
             this.label6.Text = "Final Payment";
             // 
@@ -297,7 +297,7 @@ namespace CarRent
             this.lbl_Final.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Final.Location = new System.Drawing.Point(342, 533);
             this.lbl_Final.Name = "lbl_Final";
-            this.lbl_Final.Size = new System.Drawing.Size(16, 18);
+            this.lbl_Final.Size = new System.Drawing.Size(20, 24);
             this.lbl_Final.TabIndex = 104;
             this.lbl_Final.Text = "?";
             // 
@@ -308,7 +308,7 @@ namespace CarRent
             this.label14.Location = new System.Drawing.Point(120, 503);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(77, 18);
+            this.label14.Size = new System.Drawing.Size(93, 24);
             this.label14.TabIndex = 102;
             this.label14.Text = "Total Cost";
             // 
@@ -326,7 +326,7 @@ namespace CarRent
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.Location = new System.Drawing.Point(342, 503);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(16, 18);
+            this.lblTotal.Size = new System.Drawing.Size(20, 24);
             this.lblTotal.TabIndex = 101;
             this.lblTotal.Text = "?";
             // 
@@ -344,7 +344,7 @@ namespace CarRent
             this.lbl_EndMile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_EndMile.Location = new System.Drawing.Point(342, 472);
             this.lbl_EndMile.Name = "lbl_EndMile";
-            this.lbl_EndMile.Size = new System.Drawing.Size(16, 18);
+            this.lbl_EndMile.Size = new System.Drawing.Size(20, 24);
             this.lbl_EndMile.TabIndex = 105;
             this.lbl_EndMile.Text = "?";
             // 
@@ -355,7 +355,7 @@ namespace CarRent
             this.lbl.Location = new System.Drawing.Point(119, 149);
             this.lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(78, 18);
+            this.lbl.Size = new System.Drawing.Size(100, 24);
             this.lbl.TabIndex = 105;
             this.lbl.Text = "Invoice No";
             // 
@@ -366,7 +366,7 @@ namespace CarRent
             this.label5.Location = new System.Drawing.Point(120, 472);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 18);
+            this.label5.Size = new System.Drawing.Size(117, 24);
             this.label5.TabIndex = 104;
             this.label5.Text = "End Mileage";
             // 
@@ -384,7 +384,7 @@ namespace CarRent
             this.lblInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInvoice.Location = new System.Drawing.Point(341, 149);
             this.lblInvoice.Name = "lblInvoice";
-            this.lblInvoice.Size = new System.Drawing.Size(16, 18);
+            this.lblInvoice.Size = new System.Drawing.Size(20, 24);
             this.lblInvoice.TabIndex = 102;
             this.lblInvoice.Text = "?";
             // 
@@ -458,7 +458,7 @@ namespace CarRent
             this.lblAdvance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdvance.Location = new System.Drawing.Point(340, 403);
             this.lblAdvance.Name = "lblAdvance";
-            this.lblAdvance.Size = new System.Drawing.Size(16, 18);
+            this.lblAdvance.Size = new System.Drawing.Size(20, 24);
             this.lblAdvance.TabIndex = 93;
             this.lblAdvance.Text = "?";
             // 
@@ -468,7 +468,7 @@ namespace CarRent
             this.lblStartMileage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStartMileage.Location = new System.Drawing.Point(341, 437);
             this.lblStartMileage.Name = "lblStartMileage";
-            this.lblStartMileage.Size = new System.Drawing.Size(16, 18);
+            this.lblStartMileage.Size = new System.Drawing.Size(20, 24);
             this.lblStartMileage.TabIndex = 92;
             this.lblStartMileage.Text = "?";
             // 
@@ -479,7 +479,7 @@ namespace CarRent
             this.label13.Location = new System.Drawing.Point(119, 403);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(126, 18);
+            this.label13.Size = new System.Drawing.Size(163, 24);
             this.label13.TabIndex = 91;
             this.label13.Text = "Advance Payment";
             // 
@@ -490,7 +490,7 @@ namespace CarRent
             this.label15.Location = new System.Drawing.Point(119, 437);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(94, 18);
+            this.label15.Size = new System.Drawing.Size(118, 24);
             this.label15.TabIndex = 89;
             this.label15.Text = "Start Mileage";
             // 
@@ -501,7 +501,7 @@ namespace CarRent
             this.label16.Location = new System.Drawing.Point(120, 303);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(47, 18);
+            this.label16.Size = new System.Drawing.Size(59, 24);
             this.label16.TabIndex = 88;
             this.label16.Text = "Driver";
             // 
@@ -512,7 +512,7 @@ namespace CarRent
             this.label17.Location = new System.Drawing.Point(120, 369);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(69, 18);
+            this.label17.Size = new System.Drawing.Size(88, 24);
             this.label17.TabIndex = 87;
             this.label17.Text = "End Date";
             // 
@@ -523,7 +523,7 @@ namespace CarRent
             this.label18.Location = new System.Drawing.Point(120, 337);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(74, 18);
+            this.label18.Size = new System.Drawing.Size(89, 24);
             this.label18.TabIndex = 86;
             this.label18.Text = "Start Date";
             // 
@@ -534,7 +534,7 @@ namespace CarRent
             this.label19.Location = new System.Drawing.Point(119, 271);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(73, 18);
+            this.label19.Size = new System.Drawing.Size(96, 24);
             this.label19.TabIndex = 82;
             this.label19.Text = "Vehicle ID";
             // 
@@ -545,7 +545,7 @@ namespace CarRent
             this.label20.Location = new System.Drawing.Point(119, 240);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(117, 18);
+            this.label20.Size = new System.Drawing.Size(147, 24);
             this.label20.TabIndex = 83;
             this.label20.Text = "Contact Number";
             // 
@@ -556,7 +556,7 @@ namespace CarRent
             this.label21.Location = new System.Drawing.Point(119, 209);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(33, 18);
+            this.label21.Size = new System.Drawing.Size(41, 24);
             this.label21.TabIndex = 84;
             this.label21.Text = "NIC";
             // 
@@ -567,7 +567,7 @@ namespace CarRent
             this.label22.Location = new System.Drawing.Point(119, 177);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(48, 18);
+            this.label22.Size = new System.Drawing.Size(61, 24);
             this.label22.TabIndex = 85;
             this.label22.Text = "Name";
             // 
@@ -577,7 +577,7 @@ namespace CarRent
             this.lblEndDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEndDate.Location = new System.Drawing.Point(341, 369);
             this.lblEndDate.Name = "lblEndDate";
-            this.lblEndDate.Size = new System.Drawing.Size(16, 18);
+            this.lblEndDate.Size = new System.Drawing.Size(20, 24);
             this.lblEndDate.TabIndex = 80;
             this.lblEndDate.Text = "?";
             // 
@@ -587,7 +587,7 @@ namespace CarRent
             this.lblStartDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStartDate.Location = new System.Drawing.Point(341, 337);
             this.lblStartDate.Name = "lblStartDate";
-            this.lblStartDate.Size = new System.Drawing.Size(16, 18);
+            this.lblStartDate.Size = new System.Drawing.Size(20, 24);
             this.lblStartDate.TabIndex = 79;
             this.lblStartDate.Text = "?";
             // 
@@ -597,7 +597,7 @@ namespace CarRent
             this.lblDriver.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDriver.Location = new System.Drawing.Point(340, 303);
             this.lblDriver.Name = "lblDriver";
-            this.lblDriver.Size = new System.Drawing.Size(16, 18);
+            this.lblDriver.Size = new System.Drawing.Size(20, 24);
             this.lblDriver.TabIndex = 74;
             this.lblDriver.Text = "?";
             // 
@@ -607,7 +607,7 @@ namespace CarRent
             this.lblVehID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVehID.Location = new System.Drawing.Point(340, 271);
             this.lblVehID.Name = "lblVehID";
-            this.lblVehID.Size = new System.Drawing.Size(16, 18);
+            this.lblVehID.Size = new System.Drawing.Size(20, 24);
             this.lblVehID.TabIndex = 77;
             this.lblVehID.Text = "?";
             // 
@@ -617,7 +617,7 @@ namespace CarRent
             this.lblCNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCNo.Location = new System.Drawing.Point(341, 240);
             this.lblCNo.Name = "lblCNo";
-            this.lblCNo.Size = new System.Drawing.Size(16, 18);
+            this.lblCNo.Size = new System.Drawing.Size(20, 24);
             this.lblCNo.TabIndex = 76;
             this.lblCNo.Text = "?";
             // 
@@ -627,7 +627,7 @@ namespace CarRent
             this.lblNIC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNIC.Location = new System.Drawing.Point(341, 209);
             this.lblNIC.Name = "lblNIC";
-            this.lblNIC.Size = new System.Drawing.Size(16, 18);
+            this.lblNIC.Size = new System.Drawing.Size(20, 24);
             this.lblNIC.TabIndex = 75;
             this.lblNIC.Text = "?";
             // 
@@ -637,7 +637,7 @@ namespace CarRent
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.Location = new System.Drawing.Point(341, 177);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(16, 18);
+            this.lblName.Size = new System.Drawing.Size(20, 24);
             this.lblName.TabIndex = 78;
             this.lblName.Text = "?";
             // 
@@ -658,7 +658,7 @@ namespace CarRent
             this.btn_finalConfirm.Name = "btn_finalConfirm";
             this.btn_finalConfirm.ShadowDecoration.Parent = this.btn_finalConfirm;
             this.btn_finalConfirm.Size = new System.Drawing.Size(203, 45);
-            this.btn_finalConfirm.TabIndex = 60;
+            this.btn_finalConfirm.TabIndex = 0;
             this.btn_finalConfirm.Text = "Confirm and Print Invoice";
             this.btn_finalConfirm.Click += new System.EventHandler(this.btn_finalConfirm_Click);
             // 

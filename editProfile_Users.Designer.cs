@@ -31,16 +31,16 @@ namespace CarRent
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_UserName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Txt_NewPass = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_ReNewPass = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_OldPass = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,13 +66,13 @@ namespace CarRent
             this.label2.TabIndex = 0;
             this.label2.Text = "Change UserName";
             // 
-            // textBox1
+            // txt_UserName
             // 
-            this.textBox1.Location = new System.Drawing.Point(170, 173);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 20);
-            this.textBox1.TabIndex = 1;
+            this.txt_UserName.Location = new System.Drawing.Point(170, 173);
+            this.txt_UserName.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_UserName.Name = "txt_UserName";
+            this.txt_UserName.Size = new System.Drawing.Size(180, 20);
+            this.txt_UserName.TabIndex = 1;
             // 
             // label3
             // 
@@ -85,13 +85,13 @@ namespace CarRent
             this.label3.TabIndex = 0;
             this.label3.Text = "New Password";
             // 
-            // textBox2
+            // Txt_NewPass
             // 
-            this.textBox2.Location = new System.Drawing.Point(170, 204);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 20);
-            this.textBox2.TabIndex = 1;
+            this.Txt_NewPass.Location = new System.Drawing.Point(170, 204);
+            this.Txt_NewPass.Margin = new System.Windows.Forms.Padding(2);
+            this.Txt_NewPass.Name = "Txt_NewPass";
+            this.Txt_NewPass.Size = new System.Drawing.Size(180, 20);
+            this.Txt_NewPass.TabIndex = 1;
             // 
             // label4
             // 
@@ -103,20 +103,6 @@ namespace CarRent
             this.label4.Size = new System.Drawing.Size(103, 18);
             this.label4.TabIndex = 0;
             this.label4.Text = "Change Photo";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(170, 56);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(98, 94);
-            this.guna2PictureBox1.TabIndex = 2;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // guna2Button1
             // 
@@ -131,7 +117,7 @@ namespace CarRent
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(122, 325);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(135, 37);
@@ -139,13 +125,13 @@ namespace CarRent
             this.guna2Button1.Text = "Save";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // textBox3
+            // txt_ReNewPass
             // 
-            this.textBox3.Location = new System.Drawing.Point(170, 242);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(180, 20);
-            this.textBox3.TabIndex = 5;
+            this.txt_ReNewPass.Location = new System.Drawing.Point(170, 242);
+            this.txt_ReNewPass.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_ReNewPass.Name = "txt_ReNewPass";
+            this.txt_ReNewPass.Size = new System.Drawing.Size(180, 20);
+            this.txt_ReNewPass.TabIndex = 5;
             // 
             // label5
             // 
@@ -158,13 +144,13 @@ namespace CarRent
             this.label5.TabIndex = 4;
             this.label5.Text = "Re-Enter Password";
             // 
-            // textBox4
+            // txt_OldPass
             // 
-            this.textBox4.Location = new System.Drawing.Point(170, 276);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(180, 20);
-            this.textBox4.TabIndex = 7;
+            this.txt_OldPass.Location = new System.Drawing.Point(170, 276);
+            this.txt_OldPass.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_OldPass.Name = "txt_OldPass";
+            this.txt_OldPass.Size = new System.Drawing.Size(180, 20);
+            this.txt_OldPass.TabIndex = 7;
             // 
             // label6
             // 
@@ -177,25 +163,41 @@ namespace CarRent
             this.label6.TabIndex = 6;
             this.label6.Text = "Old Password";
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(170, 56);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(98, 94);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 2;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            // 
             // editProfile_Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(388, 388);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txt_OldPass);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_ReNewPass);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2PictureBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Txt_NewPass);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_UserName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "editProfile_Users";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "editProfile_Users";
@@ -209,15 +211,15 @@ namespace CarRent
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_UserName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Txt_NewPass;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_ReNewPass;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_OldPass;
         private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

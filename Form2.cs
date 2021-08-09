@@ -66,7 +66,7 @@ namespace CarRent
                         {
                             User = txt_user.Text
                         };
-
+                        con.Close();
                         Form1 frm1 = new Form1();
                         frm1.Show();
                         this.Hide();

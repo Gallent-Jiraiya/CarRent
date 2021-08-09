@@ -210,5 +210,17 @@ namespace CarRent
         {
 
         }
+
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
+            Form2 login = new Form2();
+            login.Show();
+
+            this.Close();
+
+
+
+
+        }
     }
 }

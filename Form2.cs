@@ -69,6 +69,7 @@ namespace CarRent
 
                         Form1 frm1 = new Form1();
                         frm1.Show();
+                        this.Hide();
                     }
                     else
                     {

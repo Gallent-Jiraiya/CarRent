@@ -56,6 +56,7 @@ namespace CarRent
             this.label12 = new System.Windows.Forms.Label();
             this.txt_Invoice = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,6 +69,7 @@ namespace CarRent
             this.dataGridView1.Size = new System.Drawing.Size(389, 433);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.MouseEnter += new System.EventHandler(this.dataGridView1_MouseEnter);
             // 
             // label1
             // 
@@ -111,8 +113,8 @@ namespace CarRent
             this.btn_ReleaseVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ReleaseVehicle.ForeColor = System.Drawing.Color.White;
             this.btn_ReleaseVehicle.HoverState.Parent = this.btn_ReleaseVehicle;
-            this.btn_ReleaseVehicle.Location = new System.Drawing.Point(108, 472);
-            this.btn_ReleaseVehicle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_ReleaseVehicle.Location = new System.Drawing.Point(20, 473);
+            this.btn_ReleaseVehicle.Margin = new System.Windows.Forms.Padding(2);
             this.btn_ReleaseVehicle.Name = "btn_ReleaseVehicle";
             this.btn_ReleaseVehicle.ShadowDecoration.Parent = this.btn_ReleaseVehicle;
             this.btn_ReleaseVehicle.Size = new System.Drawing.Size(173, 37);
@@ -346,10 +348,32 @@ namespace CarRent
             this.label13.TabIndex = 45;
             this.label13.Text = "Invoice NO";
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
+            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(197, 473);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(173, 37);
+            this.guna2Button1.TabIndex = 47;
+            this.guna2Button1.Text = "Cancel Reservation";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            // 
             // US_Reserved
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.txt_Invoice);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txt_Advance);
@@ -415,5 +439,6 @@ namespace CarRent
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txt_Invoice;
         private System.Windows.Forms.Label label13;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

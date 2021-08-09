@@ -15,6 +15,14 @@ namespace CarRent
 {
     public partial class Invoice : Form
     {
+        private bool _update=false;
+
+        public bool Update
+        {
+            get { return _update; }
+            set { _update = value; }
+        }
+
         private string _name;
 
         public string Name
@@ -91,15 +99,22 @@ namespace CarRent
             get { return _StartMileage; }
             set { _StartMileage = value; lblStartMileage.Text = value + ""; }
         }
+        private String _invID;
+
+        public String InvId
+        {
+            get { return _invID; }
+            set { _invID = value; lblInvoice.Text = value + ""; }
+        }
 
 
 
         public Invoice()
         {
             InitializeComponent();
-            invoiceID();
+            
         }
-        private void invoiceID()
+        public void invoiceID()
         {
             try
             {
@@ -111,8 +126,9 @@ namespace CarRent
                 MySqlDataReader dr = cmd.ExecuteReader();
                 dr.Read();
                 lblInvoice.Text = (dr.GetInt32("rentID")+1) + "";
+                InvId = lblInvoice.Text;
 
-                
+
             }
             catch (IOException ex)
             {
@@ -150,9 +166,14 @@ namespace CarRent
 
         private void btn_confirm_Click(object sender, EventArgs e)
         {
+            
             Print(this.panelPrintInvoice);
             string Query;
-            if (lblStartMileage.Text == "")//reservation
+            if (_update == true)
+            {
+                Query= "update rent set CustName='" + _name + "',customerNIC='" + _nic + "',ConNum='" + _conNumber + "',vehicleRegNum='" + _vehID + "',rentType='OnRent',fromDate='" + _startDate + "',toDate='" + _endDate + "',driverNIC='" + _driver + "',totalCost='" + _cost + "',advancePayment='" + _advance + "',startMilage='" + _StartMileage + "' where rentID='" + _invID + "';";
+            }
+            else if (lblStartMileage.Text == "")//reservation
             {
                 Query= "insert into rent (CustName,customerNIC,ConNum,vehicleRegNum,rentType,fromDate,toDate,driverNIC,totalCost,advancePayment,userName) " +
                     "values('" + lblName.Text + "','" + lblNIC.Text + "','" + lblCNo.Text + "','" + lblVehID.Text + "','Reserved','" + lblStartDate.Text + "','" + lblEndDate.Text + "','" + lblDriver.Text + "','" + int.Parse(lblTotal.Text) + "','" + int.Parse(lblAdvance.Text) + "','Admin');";

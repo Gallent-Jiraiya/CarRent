@@ -42,7 +42,7 @@ namespace CarRent
             this.searchButton = new System.Windows.Forms.RadioButton();
             this.dashboardButton = new System.Windows.Forms.RadioButton();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_UserName = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.guna2Panel1.SuspendLayout();
@@ -253,7 +253,7 @@ namespace CarRent
             this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel3.BackgroundImage = global::CarRent.Properties.Resources.flowing_speed_lines_technology_background_1017_31772;
             this.guna2Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Panel3.Controls.Add(this.label2);
+            this.guna2Panel3.Controls.Add(this.lbl_UserName);
             this.guna2Panel3.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel3.Name = "guna2Panel3";
@@ -262,18 +262,20 @@ namespace CarRent
             this.guna2Panel3.TabIndex = 0;
             this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
             // 
-            // label2
+            // lbl_UserName
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(86, 118);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "John Doe";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lbl_UserName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_UserName.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_UserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_UserName.ForeColor = System.Drawing.Color.White;
+            this.lbl_UserName.Location = new System.Drawing.Point(12, 118);
+            this.lbl_UserName.Name = "lbl_UserName";
+            this.lbl_UserName.Size = new System.Drawing.Size(232, 20);
+            this.lbl_UserName.TabIndex = 1;
+            this.lbl_UserName.Text = "John Doe";
+            this.lbl_UserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_UserName.Click += new System.EventHandler(this.label2_Click);
             // 
             // guna2PictureBox2
             // 
@@ -315,7 +317,6 @@ namespace CarRent
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
-            this.guna2Panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -328,7 +329,7 @@ namespace CarRent
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_UserName;
         private System.Windows.Forms.RadioButton dashboardButton;
         private System.Windows.Forms.RadioButton searchButton;
         private System.Windows.Forms.RadioButton usersButton;

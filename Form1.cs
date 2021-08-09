@@ -1,8 +1,10 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,8 +42,34 @@ namespace CarRent
         public Form1()
         {
             InitializeComponent();
+            userData();
         }
+        private void userData()
+        {
+            try
+            {
+                Ureference usr = new Ureference();
+                MySqlConnection con = new DbConnection().getDb;
+                con.Open();
+                String Query = "SELECT * from staff WHERE userName='" + usr.User + "'";
+                MySqlCommand cmd = new MySqlCommand(Query, con);
+                MySqlDataReader dr = cmd.ExecuteReader();
 
+                while (dr.Read())
+                {
+                    lbl_UserName.Text = dr.GetString("fName");
+                    
+                }
+            }
+            catch (IOException e)
+            {
+                // Extract some information from this exception, and then
+                // throw it to the parent method.
+                if (e.Source != null)
+                    Console.WriteLine("IOException source: {0}", e.Source);
+                throw;
+            }
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -91,6 +119,7 @@ namespace CarRent
 
         private void radioButton1_Click(object sender, EventArgs e)
         {
+            panelContainer.Controls["US_Dashboard"].Refresh();
             panelContainer.Controls["US_Dashboard"].BringToFront();
         }
 
@@ -123,18 +152,21 @@ namespace CarRent
         {
             
             panelContainer.Controls["US_Search"].BringToFront();
+            panelContainer.Controls["US_Search"].Refresh();
         }
 
         private void onrentButton_Click(object sender, EventArgs e)
         {
             
             panelContainer.Controls["US_OnRent"].BringToFront();
+            panelContainer.Controls["US_OnRent"].Refresh();
         }
 
         private void reservedButton_Click(object sender, EventArgs e)
         {
             
             panelContainer.Controls["US_Reserved"].BringToFront();
+            panelContainer.Controls["US_Reserved"].Refresh();
         }
 
         private void usersButton_CheckedChanged(object sender, EventArgs e)
@@ -146,6 +178,7 @@ namespace CarRent
         {
             
             panelContainer.Controls["US_Users"].BringToFront();
+            panelContainer.Controls["US_Users"].Refresh();
         }
 
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)
@@ -157,6 +190,7 @@ namespace CarRent
         {
             
             panelContainer.Controls["US_Vehicles"].BringToFront();
+            panelContainer.Controls["US_Vehicles"].Refresh();
         }
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)

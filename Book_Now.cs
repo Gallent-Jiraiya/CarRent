@@ -167,6 +167,7 @@ namespace CarRent
                 inv.Cost = txtTotalCost.Text;
                 inv.Advance=txt_Advance.Text;
                 inv.StartMileage = txt_StartMile.Text;
+                inv.invoiceID();
                 inv.Show();
             }
 
@@ -202,6 +203,7 @@ namespace CarRent
                 inv.EndDate = gunaEndDate.Value.Date.ToString("yyyyMMdd");
                 inv.Cost = txtTotalCost.Text;
                 inv.Advance = txt_Advance.Text;
+                inv.invoiceID();
                 inv.Show();
             }
         }

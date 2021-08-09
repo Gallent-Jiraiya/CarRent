@@ -69,7 +69,6 @@ namespace CarRent
             this.dataGridView1.Size = new System.Drawing.Size(389, 433);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.MouseEnter += new System.EventHandler(this.dataGridView1_MouseEnter);
             // 
             // label1
             // 

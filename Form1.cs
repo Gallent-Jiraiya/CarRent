@@ -119,8 +119,11 @@ namespace CarRent
 
         private void radioButton1_Click(object sender, EventArgs e)
         {
-            panelContainer.Controls["US_Dashboard"].Refresh();
-            panelContainer.Controls["US_Dashboard"].BringToFront();
+            US_Dashboard ucDash = new US_Dashboard();
+            ucDash.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucDash);
+            panelContainer.Controls.RemoveByKey("US_Dashboard");
+            panelContainer.Controls[panelContainer.Controls.Count-1].BringToFront();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -150,23 +153,33 @@ namespace CarRent
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            
-            panelContainer.Controls["US_Search"].BringToFront();
-            panelContainer.Controls["US_Search"].Refresh();
+            US_Search ucSrch = new US_Search();
+            ucSrch.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucSrch);
+            //panelContainer.Controls["US_Search"].BringToFront();
+            panelContainer.Controls.RemoveByKey("US_Search");
+            panelContainer.Controls[panelContainer.Controls.Count-1].BringToFront();
+
         }
 
         private void onrentButton_Click(object sender, EventArgs e)
         {
-            
-            panelContainer.Controls["US_OnRent"].BringToFront();
-            panelContainer.Controls["US_OnRent"].Refresh();
+            US_OnRent ucOnrent = new US_OnRent();
+            ucOnrent.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucOnrent);
+            panelContainer.Controls.RemoveByKey("US_OnRent");
+            panelContainer.Controls[panelContainer.Controls.Count - 1].BringToFront();
+
         }
 
         private void reservedButton_Click(object sender, EventArgs e)
         {
-            
-            panelContainer.Controls["US_Reserved"].BringToFront();
-            panelContainer.Controls["US_Reserved"].Refresh();
+            US_Reserved ucReserve = new US_Reserved();
+            ucReserve.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucReserve);
+            panelContainer.Controls.RemoveByKey("US_Reserved");
+            panelContainer.Controls[panelContainer.Controls.Count - 1].BringToFront();
+
         }
 
         private void usersButton_CheckedChanged(object sender, EventArgs e)
@@ -176,9 +189,12 @@ namespace CarRent
 
         private void usersButton_Click(object sender, EventArgs e)
         {
-            
-            panelContainer.Controls["US_Users"].BringToFront();
-            panelContainer.Controls["US_Users"].Refresh();
+            US_Users ucUsers = new US_Users();
+            ucUsers.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucUsers);
+            panelContainer.Controls.RemoveByKey("US_Users");
+            panelContainer.Controls[panelContainer.Controls.Count - 1].BringToFront();
+
         }
 
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)
@@ -188,9 +204,12 @@ namespace CarRent
 
         private void vehiclesButton_Click(object sender, EventArgs e)
         {
-            
-            panelContainer.Controls["US_Vehicles"].BringToFront();
-            panelContainer.Controls["US_Vehicles"].Refresh();
+            US_Vehicles ucVehicles = new US_Vehicles();
+            ucVehicles.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(ucVehicles);
+            panelContainer.Controls.RemoveByKey("US_Vehicles");
+            panelContainer.Controls[panelContainer.Controls.Count - 1].BringToFront();
+
         }
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)

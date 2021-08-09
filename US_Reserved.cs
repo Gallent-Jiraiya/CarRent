@@ -128,9 +128,6 @@ namespace CarRent
             }
         }
 
-        private void dataGridView1_MouseEnter(object sender, EventArgs e)
-        {
-            loadTable();
-        }
+        
     }
 }

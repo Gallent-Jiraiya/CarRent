@@ -32,7 +32,7 @@ namespace CarRent
         private String _regNo;
         private int _days;
 
-        private DateTime _startDay=DateTime.Now;
+        private DateTime _startDay=DateTime.Now.Date;
 
         public DateTime StartDay
         {
@@ -40,7 +40,7 @@ namespace CarRent
             set { _startDay = value; }
         }
 
-        private DateTime _endDay=DateTime.Now;
+        private DateTime _endDay=DateTime.Now.Date;
 
         public DateTime EndDay
         {
